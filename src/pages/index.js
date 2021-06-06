@@ -38,10 +38,6 @@ export default function Home() {
 								</a>
 							</div>
 						</section>
-						<div className="main-image fade-in-top">
-							<div className="filter"></div>
-							<div className="shape"></div>
-						</div>
 					</div>
 				</div>
 				<div className="social-icons">
