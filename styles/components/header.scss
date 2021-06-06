@@ -1,0 +1,20 @@
+.header {
+	padding: 2rem;
+	height: 3.5rem;
+	width: 100%;
+	font-size: 1rem;
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	h3 {
+		font-weight: 400;
+	}
+	.nav-links {
+		a {
+			padding: 0 2rem;
+		}
+	}
+}
