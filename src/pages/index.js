@@ -13,15 +13,17 @@ export default function Home() {
 						</p>
 					</article>
 					<div className="aboutme">
-						<a href="/about" className="about-tag">
-							<p> More about me</p>
-							<div>
-								<span></span>
-								<i
-									className="fas fa-angle-right arrowbtnlogo "
-									id="arrowbtnlogo"></i>
-							</div>
-						</a>
+						<Link href="/about" passhref className="about-tag">
+							<a>
+								<p> More about me</p>
+								<div>
+									<span></span>
+									<i
+										className="fas fa-angle-right arrowbtnlogo "
+										id="arrowbtnlogo"></i>
+								</div>
+							</a>
+						</Link>
 					</div>
 				</section>
 			</main>

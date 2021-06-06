@@ -1,14 +1,25 @@
 import React from 'react';
+import Link from 'next/link';
 
 export const Header = () => {
 	return (
 		<header className="header">
 			<nav>
-				<h3>Ayush Gupta 👨‍💻</h3>
+				<Link href="/" passHref>
+					<a>
+						<h3>Ayush Gupta 👨‍💻</h3>
+					</a>
+				</Link>
 				<div className="nav-links">
-					<a href="">About </a>
-					<a href="">Work</a>
-					<a href="">Contact</a>
+					<Link href="/about" passHref>
+						<a>About</a>
+					</Link>
+					<Link href="/work" passHref>
+						<a>Work</a>
+					</Link>
+					<Link href="/contact" passHref>
+						<a>Contact</a>
+					</Link>
 				</div>
 			</nav>
 		</header>

@@ -1,8 +1,8 @@
 .header {
 	padding: 2rem;
-	height: 3.5rem;
+	height: $nav-height;
 	width: 100%;
-	font-size: 1rem;
+	font-size: $regular;
 
 	nav {
 		display: flex;
@@ -14,7 +14,7 @@
 	}
 	.nav-links {
 		a {
-			padding: 0 2rem;
+			padding: 0 1.8rem;
 		}
 	}
 }
