@@ -1,0 +1,20 @@
+.about {
+	width: 70%;
+	margin: auto;
+	padding: 1rem;
+	margin-top: 3.5rem;
+}
+.mystory {
+	h2 {
+		font-size: 3rem;
+		font-weight: $regular;
+		letter-spacing: 0;
+	}
+	article {
+		text-align: justify;
+		p {
+			font-size: 2.5rem;
+			margin: 4rem 0;
+		}
+	}
+}
