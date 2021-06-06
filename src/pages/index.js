@@ -6,7 +6,7 @@ export default function Home() {
 			<main className="homepage">
 				<div className="contentforhome">
 					<div className="content">
-						<div className="mainpagetext fade-in-bottom-text">
+						<section className="mainpagetext fade-in-bottom-text">
 							<div className="mainpage-heading">
 								<h3> web developer & designer</h3>
 								<h1>Ayush Gupta</h1>
@@ -18,7 +18,7 @@ export default function Home() {
 									everything in between.
 								</p>
 							</div>
-							<div className="aboutme-homepage">
+							<section className="aboutme-homepage">
 								<a href="/about" className="about-tag">
 									<p> MORE ABOUT ME</p>
 									<div className="hovereffect">
@@ -28,7 +28,7 @@ export default function Home() {
 											id="arrowbtnlogo"></i>
 									</div>
 								</a>
-							</div>
+							</section>
 							<div className="email-button-container">
 								<a
 									id="email-button"
@@ -37,7 +37,7 @@ export default function Home() {
 									Contact me
 								</a>
 							</div>
-						</div>
+						</section>
 						<div className="main-image fade-in-top">
 							<div className="filter"></div>
 							<div className="shape"></div>
