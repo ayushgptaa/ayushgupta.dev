@@ -1,4 +1,3 @@
-// import Head from 'next/head';
 import Link from 'next/link';
 
 export default function Home() {
@@ -13,11 +12,11 @@ export default function Home() {
 							designing clean websites.
 						</p>
 					</article>
-					<div className="aboutme-homepage">
+					<div className="aboutme">
 						<a href="/about" className="about-tag">
-							<p> MORE ABOUT ME</p>
-							<div className="hovereffect">
-								<div className="right-arrow-btn "></div>
+							<p> More about me</p>
+							<div>
+								<span></span>
 								<i
 									className="fas fa-angle-right arrowbtnlogo "
 									id="arrowbtnlogo"></i>
@@ -39,10 +38,7 @@ export default function Home() {
 					rel="noopener">
 					Li
 				</a>
-				<a
-					href="https://www.linkedin.com/in/ayush-gupta-54a855139/"
-					target="_blank"
-					rel="noopener">
+				<a href="https://twitter.com/ayuxhg" target="_blank" rel="noopener">
 					Tw
 				</a>
 			</footer>
