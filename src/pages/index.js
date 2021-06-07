@@ -8,8 +8,8 @@ export default function Home() {
 					<h1>Ayush Gupta</h1>
 					<article className="mainpagetextpara">
 						<p>
-							I'm a self taught web developer specializing in building & occasionally
-							designing clean websites.
+							I'm a self taught web developer who loves building & occasionally
+							designing exceptional clean websites.
 						</p>
 					</article>
 					<div className="aboutme">
