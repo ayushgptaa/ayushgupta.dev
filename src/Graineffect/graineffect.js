@@ -90,5 +90,5 @@ export const Graineffect = () => {
 
 		noise();
 	}, []);
-	return <canvas id="noise" class="noise"></canvas>;
+	return <canvas id="noise" className="noise"></canvas>;
 };

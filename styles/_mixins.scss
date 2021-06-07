@@ -1,0 +1,10 @@
+@mixin flex($jusity-content) {
+	display: flex;
+	justify-content: $jusity-content;
+	align-items: center;
+}
+
+@mixin flex-vertical-center {
+	display: flex;
+	align-items: center;
+}
