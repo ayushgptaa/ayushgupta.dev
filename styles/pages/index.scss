@@ -1,6 +1,9 @@
 @import '../mixins';
+.index {
+	height: 100%;
+	margin-top: 10rem;
+}
 .mainpagetext {
-	margin-top: 30%;
 	text-align: center;
 	box-sizing: border-box;
 	padding: 1.5rem;
@@ -19,6 +22,7 @@
 	cursor: pointer;
 	p {
 		font-size: 1.5rem;
+		font-weight: $light;
 	}
 }
 
@@ -62,19 +66,4 @@
 	color: $text;
 	position: absolute;
 	right: -1.5px;
-}
-
-.social-icons {
-	position: absolute;
-	bottom: 1rem;
-	color: $text;
-	width: 100%;
-	display: gird;
-	display: flex;
-	justify-content: center;
-	gap: 1.5rem;
-
-	a {
-		font-size: 1.2rem;
-	}
 }

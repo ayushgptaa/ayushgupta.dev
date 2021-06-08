@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
 
 // Variables
 
 $bg: #1c1c1c;
 $text: #dacfc0;
+$light: 300;
 $regular: 400;
 $nav-height: 3.5rem;
 
@@ -15,7 +16,8 @@ $nav-height: 3.5rem;
 	box-sizing: border-box;
 }
 
-body {
+body,
+html {
 	width: 100vw;
 	margin: 0;
 	padding: 0;
@@ -50,4 +52,7 @@ a {
 	left: 0;
 	pointer-events: none;
 	opacity: 0.25;
+}
+span {
+	display: inline-block;
 }

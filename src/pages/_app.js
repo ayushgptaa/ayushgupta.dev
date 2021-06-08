@@ -8,7 +8,6 @@ function MyApp({ Component, pageProps }) {
 		document.body.style.minHeight = window.innerHeight + 'px';
 		window.addEventListener('resize', () => {
 			document.body.style.minHeight = window.innerHeight + 'px';
-			console.log(window.innerHeight);
 		});
 		// return () => {
 		// 	window.removeEventListener('resize');
@@ -17,8 +16,9 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<>
 			{/* <Layout></Layout> */}
+
 			<Header />
-			<Component {...pageProps} />
+			<Component {...pageProps}></Component>
 		</>
 	);
 }
