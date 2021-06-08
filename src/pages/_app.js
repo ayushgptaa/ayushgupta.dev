@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
 	}, []);
 	return (
 		<>
-			<Layout></Layout>
+			{/* <Layout></Layout> */}
 			<Header />
 			<Component {...pageProps} />
 		</>

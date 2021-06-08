@@ -12,11 +12,21 @@
 	}
 	h3 {
 		font-weight: 400;
-		font-size: 0.85rem;
+		font-size: 1rem;
 	}
 	.nav-links {
+		@include flex(space-between);
 		a {
-			font-size: 0.85rem;
+			font-size: 0.95rem;
+			&:nth-child(1) {
+				padding-right: 1rem;
+			}
+			&:nth-child(2) {
+				padding-right: 1rem;
+			}
+			&:nth-child(3) {
+				padding-right: 0.3rem;
+			}
 		}
 	}
 }
