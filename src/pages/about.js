@@ -1,4 +1,5 @@
 import React from 'react';
+import { Footer } from '../components/Footer';
 import { Social } from '../components/Social';
 
 export default function About() {
@@ -29,20 +30,22 @@ export default function About() {
 					<article>
 						<p>
 							Other than creating websites, i love to draw 🎨 watching anime 📺
-							photography 📷 travelling 🗼 food 🍕 and learning Japanese 🎌.
+							photography 📷 travelling 🗼 food 🍕 and music 🎶.
 						</p>
 					</article>
 				</section>
 				<section className="contact">
-					<marquee direction="left">
-						<h3>Enough talk about me Let's talk about you ❤ </h3>
-					</marquee>
-					<h4>You can reach me here 📧📞</h4>
-					<h4>
-						<a href="mailto:ayush.gupta.jk@gmail.com">Email</a>
-					</h4>
+					{/* <marquee direction="left"> */}
+					<h3>Enough about me </h3>
+					<h3>Let's talk about you 🌹 </h3>
+
+					<h4>You can reach me here 📧</h4>
+					<h5>
+						<a href="mailto:ayush.gupta.jk@gmail.com">ayush.gupta.jk@gmail.com</a>
+					</h5>
 				</section>
 			</main>
+			<Footer />
 		</>
 	);
 }
