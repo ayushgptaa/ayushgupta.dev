@@ -8,3 +8,20 @@
 	display: flex;
 	align-items: center;
 }
+@mixin flex-horizontal-center {
+	display: flex;
+	justify-content: center;
+}
+
+@mixin respond($breakpoint) {
+	@if $breakpoint==lgmobile {
+		@media only screen and (min-width: 600px) {
+			@content;
+		}
+	}
+	@if $breakpoint==tablet {
+		@media only screen and (min-width: 700px), (min-height: 850px) {
+			@content;
+		}
+	}
+}

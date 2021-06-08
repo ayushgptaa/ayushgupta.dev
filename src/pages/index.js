@@ -6,11 +6,10 @@ export default function Home() {
 		<>
 			<main className="index">
 				<section className="mainpagetext">
-					<h1>Ayush Gupta</h1>
 					<article className="mainpagetextpara">
 						<p>
-							I'm a self taught web developer who loves building & occasionally
-							designing exceptional clean websites.
+							Hey!! I'm Ayush, a self taught web developer who loves building &
+							occasionally designing exceptional clean websites.
 						</p>
 					</article>
 					<div className="aboutme">

@@ -12,6 +12,11 @@
 	font-size: $regular;
 	z-index: 9999;
 	@include flex-vertical-center;
+
+	@include respond(lgmobile) {
+		height: calc(#{$nav-height + 1rem});
+		padding: 1.5rem 1.5rem;
+	}
 	nav {
 		width: 100%;
 		@include flex(space-between);
@@ -19,13 +24,23 @@
 	h3 {
 		font-weight: $regular;
 		font-size: 1rem;
+		@include respond(lgmobile) {
+			font-size: 1.5rem;
+		}
 	}
 	.nav-links {
 		@include flex(space-between);
 		a {
 			font-size: 1rem;
+			font-weight: $regular;
+			@include respond(lgmobile) {
+				font-size: 1.5rem;
+			}
 			&:nth-child(1) {
 				padding-right: 1rem;
+				@include respond(lgmobile) {
+					padding-right: 2rem;
+				}
 			}
 			&:nth-child(2) {
 				padding-right: 1rem;

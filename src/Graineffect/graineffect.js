@@ -50,10 +50,10 @@ export const Graineffect = () => {
 			// Setup
 			const setup = () => {
 				wWidth = window.innerWidth;
-				wHeight = window.innerHeight;
+				wHeight = document.body.scrollHeight;
 
 				canvas.width = wWidth;
-				canvas.height = wHeight;
+				// canvas.height = wHeight;
 
 				for (let i = 0; i < 10; i++) {
 					createNoise();
@@ -63,21 +63,21 @@ export const Graineffect = () => {
 			};
 
 			// Reset
-			let resizeThrottle;
-			const reset = () => {
-				window.addEventListener(
-					'resize',
-					() => {
-						window.clearTimeout(resizeThrottle);
+			// let resizeThrottle;
+			// const reset = () => {
+			// 	window.addEventListener(
+			// 		'resize',
+			// 		() => {
+			// 			window.clearTimeout(resizeThrottle);
 
-						resizeThrottle = window.setTimeout(() => {
-							window.clearTimeout(loopTimeout);
-							setup();
-						}, 200);
-					},
-					false
-				);
-			};
+			// 			resizeThrottle = window.setTimeout(() => {
+			// 				window.clearTimeout(loopTimeout);
+			// 				setup();
+			// 			}, 200);
+			// 		},
+			// 		false
+			// 	);
+			// };
 
 			// Init
 			const init = (() => {
