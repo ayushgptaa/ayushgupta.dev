@@ -22,7 +22,7 @@ export default function About() {
 					</article>
 					<article>
 						<p>
-							Some of the technologies I use are React, Nextjs, HTML5, CSS3, Sass,
+							Some of the technologies I use are Reactjs, Nextjs, HTML5, CSS3, Sass,
 							Javascript, figma for Front-end and Node.js, expressjs, firbase for
 							back-end.
 						</p>

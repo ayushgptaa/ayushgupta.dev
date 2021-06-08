@@ -5,10 +5,10 @@ export const Social = () => {
 		<>
 			<section className="social-icons">
 				<a href="https://www.instagram.com/_ayushguptaa/" target="_blank" rel="noopener">
-					<span>Ig</span>
+					Ig
 				</a>
 				<a href="https://github.com/Ayush6968" target="_blank" rel="noopener">
-					<span>Git</span>
+					Git
 				</a>
 				<a
 					href="https://www.linkedin.com/in/ayush-gupta-54a855139/"
