@@ -1,10 +1,10 @@
+@import '../mixins';
 .mainpagetext {
-	// border: 1px solid red;
-	margin-top: 3rem;
-	text-align: left;
+	margin-top: 30%;
+	text-align: center;
 	box-sizing: border-box;
-	padding: 2rem;
-	box-sizing: bordero-bx;
+	padding: 1.5rem;
+	box-sizing: bordero-box;
 
 	h1 {
 		font-size: 2.5rem;
@@ -26,10 +26,9 @@
 	margin-top: 20px;
 
 	a {
+		@include flex(center);
 		display: flex;
-		text-decoration: none;
-		align-items: center;
-		justify-content: flex-start;
+
 		&:hover {
 			span {
 				width: 100px;
@@ -45,6 +44,7 @@
 			display: flex;
 			align-items: center;
 			position: relative;
+			display: none;
 
 			span {
 				width: 70px;
@@ -65,7 +65,8 @@
 }
 
 .social-icons {
-	margin-top: 8rem;
+	position: absolute;
+	bottom: 1rem;
 	color: $text;
 	width: 100%;
 	display: gird;
