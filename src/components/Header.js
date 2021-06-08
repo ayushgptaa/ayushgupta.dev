@@ -17,9 +17,6 @@ export const Header = () => {
 					<Link href="/work" passHref>
 						<a>Work</a>
 					</Link>
-					<Link href="/contact" passHref>
-						<a>Contact</a>
-					</Link>
 				</div>
 			</nav>
 		</header>

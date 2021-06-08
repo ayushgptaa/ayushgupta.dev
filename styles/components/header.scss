@@ -1,31 +1,34 @@
 @import '../_mixins';
 .header {
+	background: $bg;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	box-sizing: border-box;
 	padding: 0 0.5rem;
 	height: $nav-height;
 	width: 100%;
 	font-size: $regular;
+	z-index: 9999;
 	@include flex-vertical-center;
 	nav {
 		width: 100%;
 		@include flex(space-between);
 	}
 	h3 {
-		font-weight: 400;
+		font-weight: $regular;
 		font-size: 1rem;
 	}
 	.nav-links {
 		@include flex(space-between);
 		a {
-			font-size: 0.95rem;
+			font-size: 1rem;
 			&:nth-child(1) {
 				padding-right: 1rem;
 			}
 			&:nth-child(2) {
 				padding-right: 1rem;
-			}
-			&:nth-child(3) {
-				padding-right: 0.3rem;
 			}
 		}
 	}
