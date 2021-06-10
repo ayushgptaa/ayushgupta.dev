@@ -1,8 +1,16 @@
+@import '../mixins';
 .about {
+	position: relative;
 	width: 92%;
 	margin: auto;
 	padding: 0.6rem;
 	margin-top: 5rem;
+
+	@include respond(desktop) {
+		width: 70%;
+		margin-left: 8%;
+		margin-top: 9%;
+	}
 }
 .aboutme {
 	h2 {
@@ -10,33 +18,70 @@
 		font-weight: $regular;
 		letter-spacing: 0;
 		text-transform: uppercase;
+		@include respond(lgmobile) {
+			font-size: 1.5rem;
+		}
+		@include respond(tablet) {
+			font-size: 2.5rem;
+		}
+		@include respond(desktop) {
+			font-size: 3rem;
+		}
 	}
 	article {
-		// text-align: justify;
 		p {
 			font-size: 1.2rem;
 			margin: 2rem 0;
+			@include respond(lgmobile) {
+				font-size: 1.5rem;
+				margin: 2.5rem 0;
+			}
+			@include respond(tablet) {
+				font-size: 2rem;
+				font-weight: $light;
+			}
+			@include respond(desktop) {
+				margin: 2.9rem 0;
+				font-size: 2.5rem;
+			}
 		}
 	}
 }
 .contact {
-	// text-align: center;
 	margin-top: 1.5rem;
 
 	h3 {
 		font-weight: $regular;
 		font-size: 1.4rem;
 		margin-top: 0.1rem;
+		@include respond(lgmobile) {
+			font-size: 1.5rem;
+		}
+		@include respond(tablet) {
+			font-size: 2rem;
+		}
+		@include respond(desktop) {
+			font-size: 2.5rem;
+		}
 	}
 	h4 {
 		font-weight: $regular;
 		margin-top: 2rem;
 		text-transform: uppercase;
+		@include respond(lgmobile) {
+			font-size: 1.5rem;
+		}
+		@include respond(desktop) {
+			font-size: 2rem;
+		}
 	}
 	h5 {
 		font-weight: $regular;
 		margin-top: 1rem;
 		font-size: 1rem;
 		text-decoration: underline;
+		@include respond(lgmobile) {
+			font-size: 1.3rem;
+		}
 	}
 }

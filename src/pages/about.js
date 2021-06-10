@@ -12,7 +12,10 @@ export default function About() {
 						<p> I am a web developer based in India who loves making things for web.</p>
 					</article>
 					<article>
-						<p>I love to keep things simple and minimal</p>
+						<p>
+							I love to keep things simple and minimal but at the same time i pay a
+							lot of attention in details.
+						</p>
 					</article>
 					<article>
 						<p>
@@ -44,8 +47,8 @@ export default function About() {
 						<a href="mailto:ayush.gupta.jk@gmail.com">ayush.gupta.jk@gmail.com</a>
 					</h5>
 				</section>
+				{/* <Footer /> */}
 			</main>
-			<Footer />
 		</>
 	);
 }
