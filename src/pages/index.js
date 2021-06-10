@@ -17,7 +17,7 @@ export default function Home() {
 							<a>
 								<p> More about me</p>
 								<div>
-									<span></span>
+									<div></div>
 									<i
 										className="fas fa-angle-right arrowbtnlogo "
 										id="arrowbtnlogo"></i>

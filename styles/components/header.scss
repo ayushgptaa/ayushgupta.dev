@@ -25,7 +25,7 @@
 		font-weight: $regular;
 		font-size: 1rem;
 		@include respond(lgmobile) {
-			font-size: 1.5rem;
+			font-size: 1.3rem;
 		}
 	}
 	.nav-links {
@@ -34,7 +34,7 @@
 			font-size: 1rem;
 			font-weight: $regular;
 			@include respond(lgmobile) {
-				font-size: 1.5rem;
+				font-size: 1.3rem;
 			}
 			&:nth-child(1) {
 				padding-right: 1rem;

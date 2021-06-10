@@ -20,7 +20,7 @@
 		font-size: 1.5rem;
 		font-weight: $light;
 		@include respond(tablet) {
-			font-size: 2.5rem;
+			font-size: 2rem;
 		}
 	}
 }
@@ -29,15 +29,12 @@
 	margin-top: 20px;
 
 	a {
-		width: 400px;
 		@include flex-horizontal-center;
 		margin: auto;
-
-		&:hover {
-			span {
-				width: 130px;
-			}
+		@include respond(lgmobile) {
+			width: 400px;
 		}
+
 		p {
 			font-size: 1rem;
 			text-transform: uppercase;
@@ -51,17 +48,20 @@
 			@include flex-vertical-center;
 			position: relative;
 			display: none;
-			@include respond(tablet) {
-				display: block;
-				// border: 1px solid red;
-			}
+			// @include respond(tablet) {
+			// 	display: inline-block;
+			// 	// border: 1px solid red;
+			// }
 
-			span {
+			div {
 				width: 100px;
 				height: 2px;
 				background-color: $text;
 				display: inline-block;
 				transition: width 0.5s ease-in-out;
+				&:hover {
+					width: 130px;
+				}
 			}
 		}
 	}
