@@ -9,7 +9,7 @@ export default function Home() {
 					<article className="mainpagetextpara">
 						<p>
 							Hey!! I'm Ayush, a self taught web developer who loves building &
-							occasionally designing exceptional clean websites.
+							occasionally designing exceptional clean websites ✌
 						</p>
 					</article>
 					<div className="about-link">
