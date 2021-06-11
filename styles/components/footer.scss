@@ -1,12 +1,22 @@
 @import '../mixins';
 .footer {
-	position: absolute;
-	bottom: 0;
-	width: 90%;
+	width: 100%;
 	font-size: 0.8rem;
-	padding: 1rem;
+	padding: 1rem 1rem;
 	margin: auto;
-	// margin-top: 2.5rem;
+	margin-top: 2.5rem;
 	border-top: 1px solid rgb(218, 207, 192, 0.2);
 	@include flex(space-between);
+
+	@include respond(lgmobile) {
+		@include fontsize(1rem);
+	}
+	@include respond(tablet) {
+		padding: 1.5rem 0;
+		@include fontsize(1.5rem);
+	}
+	@include respond(desktop) {
+		margin-top: 4rem;
+		border-top: 1px solid rgb(218, 207, 192, 0.5);
+	}
 }

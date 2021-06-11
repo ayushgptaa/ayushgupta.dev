@@ -32,8 +32,8 @@ export default function About() {
 					</article>
 					<article>
 						<p>
-							Other than creating websites, i love to draw 🎨 watching anime 📺
-							photography 📷 travelling 🗼 food 🍕 and music 🎶.
+							Other than creating websites, i love to draw 🎨 anime 😻 photography 📷
+							travelling 🗼 food 🍕 and music 🎶.
 						</p>
 					</article>
 				</section>
@@ -42,12 +42,12 @@ export default function About() {
 					<h3>Enough about me </h3>
 					<h3>Let's talk about you 🌹 </h3>
 
-					<h4>You can reach me here 📧</h4>
+					<h4>You can reach me here ✉</h4>
 					<h5>
 						<a href="mailto:ayush.gupta.jk@gmail.com">ayush.gupta.jk@gmail.com</a>
 					</h5>
 				</section>
-				{/* <Footer /> */}
+				<Footer />
 			</main>
 		</>
 	);
