@@ -46,6 +46,9 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
+p {
+	font-weight: $light;
+}
 
 .noise {
 	z-index: 0;

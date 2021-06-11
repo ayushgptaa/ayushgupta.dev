@@ -1,15 +1,20 @@
 @import '../mixins';
-
 .index {
 	width: 100%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	@include respond(desktop) {
+		width: 50%;
+	}
 }
 .mainpagetext {
 	text-align: center;
 	padding: 1.5rem;
+	@include respond(desktop) {
+		text-align: left;
+	}
 }
 
 .mainpagetextpara {
@@ -18,21 +23,33 @@
 	cursor: text;
 	p {
 		font-size: 1.5rem;
-		font-weight: $light;
 		@include respond(tablet) {
-			font-size: 2rem;
+			@include fontsize(2rem);
+		}
+		@include respond(desktop) {
+			@include fontsize(2.5em);
 		}
 	}
 }
 
-.aboutme {
+.about-link {
 	margin-top: 20px;
-
+	@include respond(desktop) {
+		width: 60%;
+	}
 	a {
 		@include flex-horizontal-center;
 		margin: auto;
 		@include respond(lgmobile) {
-			width: 400px;
+		}
+		@include respond(desktop) {
+			margin: 0;
+			@include fontsize(2.5rem);
+			@include flex(flex-start);
+		}
+
+		&:hover .line {
+			width: 130px;
 		}
 
 		p {
@@ -40,37 +57,35 @@
 			text-transform: uppercase;
 			letter-spacing: 0.5px;
 			@include respond(tablet) {
-				font-size: 1.5rem;
+				@include fontsize(1.5rem);
 			}
-		}
-		div {
-			margin-left: 0.8rem;
-			@include flex-vertical-center;
-			position: relative;
-			display: none;
-			// @include respond(tablet) {
-			// 	display: inline-block;
-			// 	// border: 1px solid red;
-			// }
-
-			div {
-				width: 100px;
-				height: 2px;
-				background-color: $text;
-				display: inline-block;
-				transition: width 0.5s ease-in-out;
-				&:hover {
-					width: 130px;
-				}
+			@include respond(desktop) {
+				@include fontsize(2rem);
 			}
 		}
 	}
+}
+.arrowbtn-container {
+	display: none;
+	@include respond(desktop) {
+		display: inline-block;
+		margin-left: 0.8rem;
+		@include flex-vertical-center;
+		position: relative;
+	}
+}
+.line {
+	width: 100px;
+	height: 2px;
+	background-color: $text;
+	display: inline-block;
+	transition: width 0.35s ease-in-out;
 }
 
 .arrowbtnlogo {
 	font-size: 14px;
 	color: $text;
 	position: absolute;
-	top: 7.5px;
+	top: -5.5px;
 	right: -3px;
 }

@@ -12,15 +12,13 @@ export default function Home() {
 							occasionally designing exceptional clean websites.
 						</p>
 					</article>
-					<div className="aboutme">
+					<div className="about-link">
 						<Link href="/about" passhref className="about-tag">
 							<a>
 								<p> More about me</p>
-								<div>
-									<div></div>
-									<i
-										className="fas fa-angle-right arrowbtnlogo "
-										id="arrowbtnlogo"></i>
+								<div className="arrowbtn-container">
+									<div className="line"></div>
+									<i className="fas fa-angle-right arrowbtnlogo "></i>
 								</div>
 							</a>
 						</Link>

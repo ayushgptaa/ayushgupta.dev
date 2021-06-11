@@ -3,7 +3,6 @@
 	justify-content: $jusity-content;
 	align-items: center;
 }
-
 @mixin flex-vertical-center {
 	display: flex;
 	align-items: center;
@@ -13,6 +12,9 @@
 	justify-content: center;
 }
 
+@mixin fontsize($fontsize) {
+	font-size: $fontsize;
+}
 @mixin respond($breakpoint) {
 	@if $breakpoint==lgmobile {
 		@media only screen and (min-width: 500px) {
