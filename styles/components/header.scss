@@ -1,7 +1,6 @@
 @import '../_mixins';
 .header {
-	// background: $bg;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -11,8 +10,7 @@
 	width: 100%;
 	font-size: $regular;
 	z-index: 9999;
-	// border: 1px solid red;
-	// opacity: 0;
+	opacity: 5;
 	@include flex-vertical-center;
 
 	@include respond(lgmobile) {

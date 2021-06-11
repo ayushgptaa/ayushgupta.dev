@@ -20,7 +20,6 @@ $nav-height: 3.5rem;
 
 body,
 html {
-	// border: 1px solid red;
 	position: relative;
 	width: 100vw;
 	margin: 0;
@@ -55,18 +54,18 @@ a {
 p {
 	font-weight: $light;
 	word-spacing: 2px;
+	user-select: none;
+	cursor: text;
 }
 
 .noise {
-	// z-index: 1000;
 	height: 100%;
 	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
 	pointer-events: none;
-	opacity: 15%;
-	z-index: 9999;
+	opacity: 13%;
 }
 span {
 	display: inline-block;

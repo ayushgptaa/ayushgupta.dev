@@ -31,6 +31,25 @@
 		p {
 			font-size: 1.2rem;
 			margin: 2rem 0;
+
+			$color: (
+				1: #61dbfb,
+				2: rgb(197, 197, 197),
+				3: #e4784a,
+				4: #0033ff,
+				5: #da5f9c,
+				6: #f0db4f,
+				7: #a39ef8,
+				8: #4ca349,
+				9: rgb(27, 255, 95),
+				10: rgb(255, 255, 0),
+			);
+			@each $i, $color in $color {
+				span:nth-child(#{$i}) {
+					color: $color;
+				}
+			}
+
 			@include respond(lgmobile) {
 				font-size: 1.5rem;
 				margin: 2.5rem 0;
