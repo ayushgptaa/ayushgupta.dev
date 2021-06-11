@@ -1,6 +1,6 @@
 @import '../_mixins';
 .header {
-	background: $bg;
+	// background: $bg;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -11,6 +11,8 @@
 	width: 100%;
 	font-size: $regular;
 	z-index: 9999;
+	// border: 1px solid red;
+	// opacity: 0;
 	@include flex-vertical-center;
 
 	@include respond(lgmobile) {
@@ -18,6 +20,7 @@
 		padding: 1.5rem 1.5rem;
 	}
 	nav {
+		opacity: 1;
 		width: 100%;
 		@include flex(space-between);
 	}

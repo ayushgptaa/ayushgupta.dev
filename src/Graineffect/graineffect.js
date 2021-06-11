@@ -4,6 +4,7 @@ export const Graineffect = () => {
 	useEffect(() => {
 		const noise = () => {
 			let canvas, ctx;
+
 			let wWidth, wHeight;
 
 			let noiseData = [];
@@ -20,7 +21,6 @@ export const Graineffect = () => {
 				for (let i = 0; i < len; i++) {
 					if (Math.random() < 0.5) {
 						buffer32[i] = 0xff000000;
-						// console.log(buffer32);
 					}
 				}
 
@@ -50,10 +50,9 @@ export const Graineffect = () => {
 			// Setup
 			const setup = () => {
 				wWidth = window.innerWidth;
-				wHeight = document.body.scrollHeight;
-
+				wHeight = window.innerHeight;
 				canvas.width = wWidth;
-				// canvas.height = wHeight;
+				canvas.height = wHeight;
 
 				for (let i = 0; i < 10; i++) {
 					createNoise();
@@ -63,21 +62,21 @@ export const Graineffect = () => {
 			};
 
 			// Reset
-			// let resizeThrottle;
-			// const reset = () => {
-			// 	window.addEventListener(
-			// 		'resize',
-			// 		() => {
-			// 			window.clearTimeout(resizeThrottle);
+			let resizeThrottle;
+			const reset = () => {
+				window.addEventListener(
+					'resize',
+					() => {
+						window.clearTimeout(resizeThrottle);
 
-			// 			resizeThrottle = window.setTimeout(() => {
-			// 				window.clearTimeout(loopTimeout);
-			// 				setup();
-			// 			}, 200);
-			// 		},
-			// 		false
-			// 	);
-			// };
+						resizeThrottle = window.setTimeout(() => {
+							window.clearTimeout(loopTimeout);
+							setup();
+						}, 200);
+					},
+					false
+				);
+			};
 
 			// Init
 			const init = (() => {
