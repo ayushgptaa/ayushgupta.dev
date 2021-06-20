@@ -19,21 +19,23 @@ export default function About() {
 					</article>
 					<article>
 						<p>
+							Some of the technologies I use are <span>Reactjs,</span>{' '}
+							<span>Nextjs, </span> <span>HTML5,</span> <span>CSS3,</span>{' '}
+							<span>Sass,</span> <span>Javascript,</span> <span>figma</span> for
+							Front-end and <span>Node.js,</span>
+							{''}
+							<span>firebase</span> for back-end.
+						</p>
+					</article>
+					<article>
+						<p>
 							I strive to design interfaces and experiences that people can enjoy on
 							all digital mediums. I have a strong basics of front-end and ui/ux
 							design and presently i am fixate towards imporving and learning back-end
 							skills.
 						</p>
 					</article>
-					<article>
-						<p>
-							Some of the technologies I use are <span>Reactjs,</span>{' '}
-							<span>Nextjs, </span> <span>HTML5,</span> <span>CSS3,</span>{' '}
-							<span>Sass,</span> <span>Javascript,</span> <span>figma</span> for
-							Front-end and <span>Node.js,</span> <span>Express.js,</span>{' '}
-							<span>firebase</span> for back-end.
-						</p>
-					</article>
+
 					<article>
 						<p>
 							Other than creating websites, i love to sketching 🎨 anime 😻
