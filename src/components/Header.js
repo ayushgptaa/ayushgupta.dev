@@ -1,3 +1,5 @@
+/** @format */
+
 import React from 'react';
 import Link from 'next/link';
 
@@ -7,15 +9,15 @@ export const Header = () => {
 			<nav>
 				<Link href="/" passHref>
 					<a>
-						<h3>Ayush Gupta 👨‍💻</h3>
+						<h3>Ayush Gupta</h3>
 					</a>
 				</Link>
 				<div className="nav-links">
 					<Link href="/about" passHref>
-						<a>About</a>
+						<a>👦 About</a>
 					</Link>
 					<Link href="/work" passHref>
-						<a>Work</a>
+						<a>🔨 Work</a>
 					</Link>
 				</div>
 			</nav>

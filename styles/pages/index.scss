@@ -1,3 +1,5 @@
+/** @format */
+
 @import '../mixins';
 .index {
 	width: 100%;
@@ -6,7 +8,7 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	@include respond(desktop) {
-		width: 50%;
+		width: 60%;
 	}
 }
 .mainpagetext {
@@ -26,7 +28,7 @@
 			@include fontsize(2rem);
 		}
 		@include respond(desktop) {
-			@include fontsize(2.5em);
+			@include fontsize(3rem);
 		}
 	}
 }
@@ -43,9 +45,8 @@
 		}
 		@include respond(desktop) {
 			margin: 0;
-			@include fontsize(2.5rem);
 			@include flex(flex-start);
-			width: 450px;
+			width: 5000px;
 		}
 
 		&:hover .line {
@@ -53,7 +54,7 @@
 		}
 
 		p {
-			font-size: 1rem;
+			font-size: 1.5rem;
 			text-transform: uppercase;
 			letter-spacing: 0.5px;
 			cursor: pointer;
@@ -61,7 +62,7 @@
 				@include fontsize(1.5rem);
 			}
 			@include respond(desktop) {
-				@include fontsize(2rem);
+				@include fontsize(2.5rem);
 			}
 		}
 	}

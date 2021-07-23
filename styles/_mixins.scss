@@ -1,3 +1,5 @@
+/** @format */
+
 @mixin flex($jusity-content) {
 	display: flex;
 	justify-content: $jusity-content;
@@ -11,7 +13,6 @@
 	display: flex;
 	justify-content: center;
 }
-
 @mixin fontsize($fontsize) {
 	font-size: $fontsize;
 }

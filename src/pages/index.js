@@ -1,3 +1,5 @@
+/** @format */
+
 import Link from 'next/link';
 import { Social } from '../components/Social';
 
@@ -8,8 +10,9 @@ export default function Home() {
 				<section className="mainpagetext">
 					<article className="mainpagetextpara">
 						<p>
-							Hey!! I'm Ayush, a self taught web developer who loves creating &
-							occasionally designing exceptional clean websites.
+							Hey!! I'm Ayush, a self taught web developer who
+							loves building & sometimes designing exceptional
+							clean websites 👋
 						</p>
 					</article>
 					<div className="about-link">

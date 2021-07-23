@@ -1,3 +1,5 @@
+/** @format */
+
 @import '../_mixins';
 .header {
 	position: absolute;
@@ -42,9 +44,6 @@
 				@include respond(lgmobile) {
 					padding-right: 2rem;
 				}
-			}
-			&:nth-child(2) {
-				padding-right: 0.5rem;
 			}
 		}
 	}

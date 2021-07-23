@@ -1,3 +1,5 @@
+/** @format */
+
 @import '../mixins';
 .about {
 	width: 92%;
@@ -32,22 +34,22 @@
 			font-size: 1.2rem;
 			margin: 2rem 0;
 
-			$color: (
-				1: #61dbfb,
-				2: rgb(255, 82, 255),
-				3: #e4784a,
-				4: #607ffa,
-				5: #da5f9c,
-				6: #f0db4f,
-				7: #a39ef8,
-				8: #84e680,
-				9: rgb(51, 255, 228),
-			);
-			@each $i, $color in $color {
-				span:nth-child(#{$i}) {
-					color: $color;
-				}
-			}
+			// $color: (
+			// 	1: #61dbfb,
+			// 	2: rgb(255, 82, 255),
+			// 	3: #e4784a,
+			// 	4: #607ffa,
+			// 	5: #da5f9c,
+			// 	6: #f0db4f,
+			// 	7: #a39ef8,
+			// 	8: #84e680,
+			// 	9: rgb(51, 255, 228),
+			// );
+			// @each $i, $color in $color {
+			// 	span:nth-child(#{$i}) {
+			// 		color: $color;
+			// 	}
+			// }
 
 			@include respond(lgmobile) {
 				font-size: 1.5rem;
