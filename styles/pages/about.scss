@@ -20,13 +20,13 @@
 		letter-spacing: 0;
 		text-transform: uppercase;
 		@include respond(lgmobile) {
-			font-size: 1.5rem;
+			@include fontsize(1.5rem);
 		}
 		@include respond(tablet) {
-			font-size: 2.5rem;
+			@include fontsize(2.5rem);
 		}
 		@include respond(desktop) {
-			font-size: 3rem;
+			@include fontsize(3.5rem);
 		}
 	}
 	article {
@@ -52,7 +52,7 @@
 			// }
 
 			@include respond(lgmobile) {
-				font-size: 1.5rem;
+				@include fontsize(1.5rem);
 				margin: 2.5rem 0;
 			}
 			@include respond(tablet) {
@@ -61,7 +61,7 @@
 			}
 			@include respond(desktop) {
 				margin: 2.9rem 0;
-				font-size: 2.5rem;
+				@include fontsize(2.5rem);
 			}
 		}
 	}
@@ -79,13 +79,13 @@
 		font-size: 1.4rem;
 		margin-top: 0.1rem;
 		@include respond(lgmobile) {
-			font-size: 1.5rem;
+			@include fontsize(1.5rem);
 		}
 		@include respond(tablet) {
-			font-size: 2rem;
+			@include fontsize(2rem);
 		}
 		@include respond(desktop) {
-			font-size: 2.5rem;
+			@include fontsize(2.5rem);
 		}
 	}
 	h4 {
@@ -93,10 +93,10 @@
 		margin-top: 2rem;
 		text-transform: uppercase;
 		@include respond(lgmobile) {
-			font-size: 1.5rem;
+			@include fontsize(1.5rem);
 		}
 		@include respond(desktop) {
-			font-size: 2rem;
+			@include fontsize(2rem);
 		}
 	}
 	h5 {
@@ -105,10 +105,10 @@
 		font-size: 1rem;
 		text-decoration: underline;
 		@include respond(lgmobile) {
-			font-size: 1.3rem;
+			@include fontsize(1.3rem);
 		}
 		@include respond(lgmobile) {
-			font-size: 2rem;
+			@include fontsize(2rem);
 		}
 	}
 }
