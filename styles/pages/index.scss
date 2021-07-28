@@ -20,21 +20,19 @@
 }
 
 .mainpagetextpara {
-	margin-top: 0.2rem;
-
 	p {
-		font-size: 1.5rem;
+		font-size: $font-smobile;
 		@include respond(tablet) {
-			@include fontsize(2rem);
+			@include fontsize($font-tablet);
 		}
 		@include respond(desktop) {
-			@include fontsize(3rem);
+			@include fontsize($font-desktop);
 		}
 	}
 }
 
 .about-link {
-	margin-top: 20px;
+	margin-top: 1.5rem;
 	@include respond(desktop) {
 		width: 100%;
 	}
@@ -46,23 +44,23 @@
 		@include respond(desktop) {
 			margin: 0;
 			@include flex(flex-start);
-			width: 5000px;
+			width: 500px;
 		}
 
 		&:hover .line {
-			width: 130px;
+			width: 100px;
 		}
 
 		p {
-			font-size: 1.5rem;
+			font-size: $font-smobile;
 			text-transform: uppercase;
 			letter-spacing: 0.5px;
 			cursor: pointer;
 			@include respond(tablet) {
-				@include fontsize(1.5rem);
+				@include fontsize(calc(#{$font-tablet} - 0.5rem));
 			}
 			@include respond(desktop) {
-				@include fontsize(2.5rem);
+				@include fontsize(calc(#{$font-desktop} - 0.5rem));
 			}
 		}
 	}
@@ -71,13 +69,13 @@
 	display: none;
 	@include respond(desktop) {
 		display: inline-block;
-		margin-left: 0.8rem;
+		margin-left: 1rem;
 		@include flex-vertical-center;
 		position: relative;
 	}
 }
 .line {
-	width: 100px;
+	width: 80px;
 	height: 2px;
 	background-color: $text;
 	display: inline-block;
@@ -85,9 +83,9 @@
 }
 
 .arrowbtnlogo {
-	font-size: 14px;
+	font-size: 20px;
 	color: $text;
 	position: absolute;
-	top: -5.5px;
+	top: -8.5px;
 	right: -3px;
 }
