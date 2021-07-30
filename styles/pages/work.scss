@@ -15,38 +15,5 @@
 }
 
 .work-section {
-	h2 {
-		font-size: 1rem;
-		font-weight: $regular;
-		letter-spacing: 0;
-		text-transform: uppercase;
-		@include respond(lgmobile) {
-			@include fontsize(1.5rem);
-		}
-		@include respond(tablet) {
-			@include fontsize(2.5rem);
-		}
-		@include respond(desktop) {
-			@include fontsize(3.5rem);
-		}
-	}
-	article {
-		p {
-			font-size: 1.2rem;
-			margin: 2rem 0;
-
-			@include respond(lgmobile) {
-				@include fontsize(1.5rem);
-				margin: 2.5rem 0;
-			}
-			@include respond(tablet) {
-				font-size: 2rem;
-				font-weight: $light;
-			}
-			@include respond(desktop) {
-				margin: 2.9rem 0;
-				@include fontsize(2.5rem);
-			}
-		}
-	}
+	@include maintext;
 }

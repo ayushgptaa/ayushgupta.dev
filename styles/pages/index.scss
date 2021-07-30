@@ -21,12 +21,12 @@
 
 .mainpagetextpara {
 	p {
-		font-size: $font-smobile;
+		font-size: 1.5rem;
 		@include respond(tablet) {
-			@include fontsize($font-tablet);
+			@include fontsize(2.5rem);
 		}
 		@include respond(desktop) {
-			@include fontsize($font-desktop);
+			@include fontsize(2.5rem);
 		}
 	}
 }
@@ -52,15 +52,15 @@
 		}
 
 		p {
-			font-size: $font-smobile;
+			font-size: 1.5rem;
 			text-transform: uppercase;
 			letter-spacing: 0.5px;
 			cursor: pointer;
 			@include respond(tablet) {
-				@include fontsize(calc(#{$font-tablet} - 0.5rem));
+				@include fontsize(2rem);
 			}
 			@include respond(desktop) {
-				@include fontsize(calc(#{$font-desktop} - 0.5rem));
+				@include fontsize(2.5rem);
 			}
 		}
 	}

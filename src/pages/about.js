@@ -19,12 +19,6 @@ export default function About() {
 
 					<article>
 						<p>
-							I didn't learned code by creating boring and average websites, but I learned code by making
-							amazing and exceptional websites for some amazing people.
-						</p>
-					</article>
-					<article>
-						<p>
 							I love to keep things simple and minimal but at the same time I pay a lot of attention in
 							details.
 						</p>
@@ -45,8 +39,8 @@ export default function About() {
 
 					<article>
 						<p>
-							Other than creating websites, I love to sketching 🎨 anime 😻 photography 📷 travelling 🗼
-							food 🍕 and music 🎶.
+							Other than creating websites, I love to sketch 🎨 anime 📺 photography 📷 travelling 🗼 food
+							🍕 and music 🎶.
 						</p>
 					</article>
 				</section>
@@ -55,7 +49,7 @@ export default function About() {
 					<h3>Enough about me </h3>
 					<h3>Let's talk about you 🌹 </h3>
 
-					<h4>You can reach me here ✉</h4>
+					<h4>You can reach me here </h4>
 					<h5>
 						<a href="mailto:ayush.gupta.jk@gmail.com">ayush.gupta.jk@gmail.com</a>
 					</h5>

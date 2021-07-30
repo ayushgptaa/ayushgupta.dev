@@ -14,10 +14,10 @@ export const Header = () => {
 				</Link>
 				<div className="nav-links">
 					<Link href="/about" passHref>
-						<a>👦 About</a>
+						<a> About</a>
 					</Link>
 					<Link href="/work" passHref>
-						<a>🔨 Work</a>
+						<a> Work</a>
 					</Link>
 				</div>
 			</nav>
