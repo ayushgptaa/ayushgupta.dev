@@ -7,7 +7,7 @@
 	h3 {
 		overflow: hidden;
 		text-align: center;
-		font-size: 0.9rem;
+		font-size: 1rem;
 		margin-bottom: 1rem;
 	}
 
@@ -50,9 +50,15 @@
 }
 
 .Seework {
+	font-size: 0.7rem;
+	font-weight: $light;
+	width: 100px;
 	border: 1px solid $text;
 	margin: 0.5rem 0;
-	padding: 0.5rem 2rem;
+	padding: 0.5rem 0rem;
 	background: $bg;
 	color: $text;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
 }

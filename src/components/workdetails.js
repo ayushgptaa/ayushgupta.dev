@@ -12,7 +12,7 @@ const workdetails = () => {
 				<h3>Personal Project</h3>
 				<span></span>
 				<div className="work-image">
-					<Image src={WhatstheSauce} layout="fill" objectFit="cover" />
+					<Image src={WhatstheSauce} layout="fill" objectFit="cover" quality={100} />
 				</div>
 				<div className="work-details">
 					<h2 className="work-name">WHATSTHESAUCE</h2>
