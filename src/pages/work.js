@@ -15,8 +15,9 @@ export default function work() {
 						</p>
 					</article>
 				</section>
-
-				<Work />
+				<section>
+					<Work />
+				</section>
 			</main>
 		</>
 	);
