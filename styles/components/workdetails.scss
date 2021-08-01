@@ -1,0 +1,58 @@
+/** @format */
+.Work-info {
+	border-bottom: 1px solid $text;
+	margin-top: 4rem;
+	padding: 0 0 2rem 0;
+	position: relative;
+	h3 {
+		overflow: hidden;
+		text-align: center;
+		font-size: 0.9rem;
+		margin-bottom: 1rem;
+	}
+
+	h3:before,
+	h3:after {
+		content: '';
+		background-color: $text;
+		display: inline-block;
+		height: 0.5px;
+		position: relative;
+		vertical-align: middle;
+		width: 50%;
+	}
+	h3:before {
+		right: 0.5em;
+		margin-left: -50%;
+	}
+	h3:after {
+		left: 0.5em;
+		margin-right: -50%;
+	}
+}
+.work-image {
+	border: 1px solid $text;
+	position: relative;
+	aspect-ratio: 16/9;
+}
+
+.work-details {
+	margin: auto;
+	h2 {
+		margin: 1rem 0 0 0;
+		font-size: 2rem;
+	}
+
+	p {
+		font-size: 0.8rem;
+		margin: 1rem 0;
+	}
+}
+
+.Seework {
+	border: 1px solid $text;
+	margin: 0.5rem 0;
+	padding: 0.5rem 2rem;
+	background: $bg;
+	color: $text;
+}
