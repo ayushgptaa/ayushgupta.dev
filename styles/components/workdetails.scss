@@ -1,14 +1,22 @@
 /** @format */
-.Work-info {
-	border-bottom: 1px solid $text;
-	margin-top: 4rem;
-	padding: 0 0 2rem 0;
-	position: relative;
+@import '../_mixins';
+.work-wrapper {
+	margin-top: 2.5rem;
+	@include respond(tablet) {
+		margin-top: 4rem;
+	}
+}
+.work-title {
 	h3 {
 		overflow: hidden;
 		text-align: center;
 		font-size: 1rem;
-		margin-bottom: 1rem;
+		@include respond(tablet) {
+			@include fontsize(1.2rem);
+		}
+		@include respond(desktop) {
+			@include fontsize(1.5rem);
+		}
 	}
 
 	h3:before,
@@ -16,7 +24,7 @@
 		content: '';
 		background-color: $text;
 		display: inline-block;
-		height: 0.5px;
+		height: 1px;
 		position: relative;
 		vertical-align: middle;
 		width: 50%;
@@ -30,35 +38,77 @@
 		margin-right: -50%;
 	}
 }
+.Work-info {
+	width: 100%;
+	@include respond(desktop) {
+		margin-top: 1rem;
+	}
+}
 .work-image {
 	border: 1px solid $text;
 	position: relative;
 	aspect-ratio: 16/9;
+	margin-top: 1rem;
+	@include respond(tablet) {
+		width: 100%;
+	}
+	@include respond(desktop) {
+		width: 70%;
+		margin: auto;
+	}
 }
-
+.work-name {
+	text-align: center;
+	font-size: 1.8rem;
+	@include respond(tablet) {
+		@include fontsize(2.5rem);
+	}
+	@include respond(desktop) {
+		@include fontsize(4rem);
+	}
+}
 .work-details {
+	width: 100%;
 	margin: auto;
-	h2 {
-		margin: 1rem 0 0 0;
-		font-size: 2rem;
+	@include respond(desktop) {
+		width: 70%;
+		text-align: center;
 	}
 
 	p {
-		font-size: 0.8rem;
+		font-size: 1rem;
 		margin: 1rem 0;
+		@include respond(tablet) {
+			@include fontsize(1.5rem);
+			margin: 1.5rem 0;
+		}
+		@include respond(desktop) {
+			@include fontsize(2rem);
+			margin: 1.5rem 0;
+		}
 	}
 }
 
 .Seework {
-	font-size: 0.7rem;
+	font-size: 0.8rem;
 	font-weight: $light;
 	width: 100px;
 	border: 1px solid $text;
-	margin: 0.5rem 0;
 	padding: 0.5rem 0rem;
 	background: $bg;
 	color: $text;
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
+	margin: 1.5rem 0;
+	@include flex(space-evenly);
+	@include respond(tablet) {
+		@include fontsize(1rem);
+		padding: 0.6rem 0rem;
+		width: 120px;
+	}
+	@include respond(desktop) {
+		@include fontsize(1.2rem);
+		padding: 0.7rem 0rem;
+		width: 140px;
+		margin: auto;
+		margin-top: 1.5rem;
+	}
 }
