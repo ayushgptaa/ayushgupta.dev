@@ -7,7 +7,7 @@ export default function work() {
 		<>
 			<main className="work">
 				<section className="work-section">
-					<h2> Works 🔨</h2>
+					<h2> WHAT HAVE I DONE 🔨</h2>
 					<article>
 						<p>
 							A collection of my designs and front-end Projects. These are a mix of freelance, practice

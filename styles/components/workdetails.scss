@@ -5,37 +5,50 @@
 	@include respond(tablet) {
 		margin-top: 4rem;
 	}
-}
-.work-title {
-	h3 {
-		overflow: hidden;
-		text-align: center;
-		font-size: 1rem;
-		@include respond(tablet) {
-			@include fontsize(1.2rem);
+	div {
+		h3 {
+			overflow: hidden;
+			text-align: center;
+			font-size: 1rem;
+			@include respond(tablet) {
+				@include fontsize(1.2rem);
+			}
+			@include respond(desktop) {
+				@include fontsize(1.5rem);
+			}
 		}
-		@include respond(desktop) {
-			@include fontsize(1.5rem);
-		}
-	}
 
-	h3:before,
-	h3:after {
-		content: '';
-		background-color: $text;
-		display: inline-block;
-		height: 1px;
-		position: relative;
-		vertical-align: middle;
-		width: 50%;
+		h3:before,
+		h3:after {
+			content: '';
+			background-color: $text;
+			display: inline-block;
+			height: 1px;
+			position: relative;
+			vertical-align: middle;
+			width: 50%;
+		}
+		h3:before {
+			right: 0.5em;
+			margin-left: -50%;
+		}
+		h3:after {
+			left: 0.5em;
+			margin-right: -50%;
+		}
 	}
-	h3:before {
-		right: 0.5em;
-		margin-left: -50%;
+}
+
+.work-name {
+	text-align: center;
+	margin: 1rem 0;
+	font-size: 1.5rem;
+	@include respond(tablet) {
+		@include fontsize(2rem);
 	}
-	h3:after {
-		left: 0.5em;
-		margin-right: -50%;
+	@include respond(desktop) {
+		margin: 2rem 0;
+		@include fontsize(3.5rem);
 	}
 }
 .Work-info {
@@ -57,16 +70,7 @@
 		margin: auto;
 	}
 }
-.work-name {
-	text-align: center;
-	font-size: 1.8rem;
-	@include respond(tablet) {
-		@include fontsize(2.5rem);
-	}
-	@include respond(desktop) {
-		@include fontsize(4rem);
-	}
-}
+
 .work-details {
 	width: 100%;
 	margin: auto;
@@ -107,7 +111,7 @@
 	@include respond(desktop) {
 		@include fontsize(1.2rem);
 		padding: 0.7rem 0rem;
-		width: 140px;
+		width: 150px;
 		margin: auto;
 		margin-top: 1.5rem;
 	}

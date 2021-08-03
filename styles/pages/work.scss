@@ -6,7 +6,9 @@
 	margin: auto;
 	padding: 0.6rem;
 	margin-top: 6rem;
-
+	@include respond(tablet) {
+		margin-top: 10rem;
+	}
 	@include respond(desktop) {
 		width: 85%;
 		margin-top: 10rem;
@@ -15,5 +17,4 @@
 
 .work-section {
 	@include maintext;
-	// height: 60vh;
 }

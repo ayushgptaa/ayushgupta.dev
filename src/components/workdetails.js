@@ -8,10 +8,8 @@ import WhatstheSauce from '../../public/wts.png';
 const workdetails = () => {
 	return (
 		<section className="work-wrapper">
-			<div className="work-title">
+			<div>
 				<h3>Personal Project</h3>
-				<span></span>
-
 				<h2 className="work-name">WHATSTHESAUCE</h2>
 			</div>
 			<div className="Work-info">
