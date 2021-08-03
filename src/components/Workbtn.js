@@ -8,7 +8,7 @@ const Workbtn = () => {
 	return (
 		<button className="Seework">
 			<a href="https://google.com" target="_blank">
-				See work
+				SEE WORK
 			</a>
 			<Icon icon={arrowUpRight} style={{ color: '#DACFC0' }} />
 		</button>

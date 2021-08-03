@@ -11,8 +11,7 @@ export default function work() {
 					<article>
 						<p>
 							A collection of my designs and front-end Projects. These are a mix of freelance, practice
-							and personal projects. My style can be defined as neat, structured and minimalist, yet
-							creative.The technologies I usually used are Vue.js, NuxtJS, HTML5, CSS3, Sass, Java
+							and personal projects.
 						</p>
 					</article>
 				</section>

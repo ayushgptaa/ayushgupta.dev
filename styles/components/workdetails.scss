@@ -66,7 +66,7 @@
 		width: 100%;
 	}
 	@include respond(desktop) {
-		width: 70%;
+		width: 100%;
 		margin: auto;
 	}
 }
@@ -75,8 +75,7 @@
 	width: 100%;
 	margin: auto;
 	@include respond(desktop) {
-		width: 70%;
-		text-align: center;
+		width: 100%;
 	}
 
 	p {
@@ -112,7 +111,7 @@
 		@include fontsize(1.2rem);
 		padding: 0.7rem 0rem;
 		width: 150px;
-		margin: auto;
+		// margin: auto;
 		margin-top: 1.5rem;
 	}
 }
