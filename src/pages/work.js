@@ -1,8 +1,9 @@
 /** @format */
 
+import { Footer } from '../components/Footer';
 import Work from '../components/workdetails';
 
-export default function work() {
+export default function work({ data }) {
 	return (
 		<>
 			<main className="work">
@@ -15,8 +16,32 @@ export default function work() {
 						</p>
 					</article>
 				</section>
-				<Work />
+				<Work result={data.result} />
 			</main>
+			<Footer />
 		</>
 	);
+}
+
+export async function getStaticProps() {
+	const query = encodeURIComponent(`*[_type == "work"]{
+	_id,
+	projecttype,
+	title,
+	image{asset},
+	description,
+	technology,
+	workurl,
+}`);
+	const url = `https://${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}.apicdn.sanity.io/v1/data/query/production?query=${query}`;
+	const res = await fetch(url);
+	const data = await res.json();
+	if (!data)
+		return {
+			notFound: true,
+		};
+	else
+		return {
+			props: { data }, // will be passed to the page component as props
+		};
 }

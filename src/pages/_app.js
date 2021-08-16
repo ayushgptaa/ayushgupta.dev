@@ -1,3 +1,5 @@
+/** @format */
+
 import { useEffect } from 'react';
 import '../../styles/main.scss';
 import { Header } from '../components/Header';
