@@ -17,8 +17,8 @@ export default function work({ data }) {
 					</article>
 				</section>
 				<Work result={data.result} />
+				<Footer />
 			</main>
-			<Footer />
 		</>
 	);
 }
@@ -42,6 +42,7 @@ export async function getStaticProps() {
 		};
 	else
 		return {
-			props: { data }, // will be passed to the page component as props
+			props: { data },
+			revalidate: 10, // In seconds
 		};
 }

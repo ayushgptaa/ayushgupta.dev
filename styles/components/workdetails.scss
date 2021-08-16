@@ -2,6 +2,7 @@
 @import '../_mixins';
 .work-wrapper {
 	margin-top: 2.5rem;
+
 	@include respond(tablet) {
 		margin-top: 4rem;
 	}
@@ -10,6 +11,7 @@
 			overflow: hidden;
 			text-align: center;
 			font-size: 1rem;
+			text-transform: capitalize;
 			@include respond(tablet) {
 				@include fontsize(1.2rem);
 			}
@@ -43,6 +45,7 @@
 	text-align: center;
 	margin: 1rem 0;
 	font-size: 1.5rem;
+	text-transform: uppercase;
 	@include respond(tablet) {
 		@include fontsize(2rem);
 	}
@@ -91,6 +94,9 @@
 		}
 	}
 }
+.work-stack {
+	text-transform: capitalize;
+}
 
 .Seework {
 	font-size: 0.8rem;
@@ -101,6 +107,7 @@
 	background: $bg;
 	color: $text;
 	margin: 1.5rem 0;
+	cursor: pointer;
 	@include flex(space-evenly);
 	@include respond(tablet) {
 		@include fontsize(1rem);
@@ -111,7 +118,6 @@
 		@include fontsize(1.2rem);
 		padding: 0.7rem 0rem;
 		width: 150px;
-		// margin: auto;
 		margin-top: 1.5rem;
 	}
 }

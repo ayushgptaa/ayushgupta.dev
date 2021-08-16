@@ -33,18 +33,19 @@
 	}
 	.nav-links {
 		@include flex(space-between);
+		gap: 20px;
 		a {
 			font-size: 1rem;
 			font-weight: $regular;
 			@include respond(lgmobile) {
 				font-size: 1.3rem;
 			}
-			&:nth-child(1) {
-				padding-right: 1rem;
-				@include respond(lgmobile) {
-					padding-right: 2rem;
-				}
-			}
+			// &:nth-child(1) {
+			// 	padding-right: 1rem;
+			// 	@include respond(lgmobile) {
+			// 		padding-right: 2rem;
+			// 	}
+			// }
 		}
 	}
 }

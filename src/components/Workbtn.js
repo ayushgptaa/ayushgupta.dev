@@ -4,14 +4,12 @@ import React from 'react';
 import { Icon } from '@iconify/react';
 import arrowUpRight from '@iconify/icons-bi/arrow-up-right';
 
-const Workbtn = () => {
+const Workbtn = ({ url }) => {
 	return (
-		<button className="Seework">
-			<a href="https://google.com" target="_blank">
-				SEE WORK
-			</a>
+		<a className="Seework" href={url} target="_blank">
+			<span>SEE WORK</span>
 			<Icon icon={arrowUpRight} style={{ color: '#DACFC0' }} />
-		</button>
+		</a>
 	);
 };
 export default Workbtn;
