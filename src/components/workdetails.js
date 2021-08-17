@@ -5,10 +5,8 @@ import Image from 'next/image';
 import SeeWork from './Workbtn';
 import { useNextSanityImage } from 'next-sanity-image';
 import client from '../../client';
-// import cruxe from '../../public/cruxe.png';
-const workdetails = ({ result }) => {
-	console.log(result);
 
+const workdetails = ({ result }) => {
 	return (
 		<>
 			{result.map(data => {
@@ -22,11 +20,10 @@ const workdetails = ({ result }) => {
 							<div className="work-image">
 								<Image
 									src={useNextSanityImage(client, data.image)}
+									quality={100}
 									layout="fill"
 									objectFit="cover"
-									quality={100}
 									alt={data.title}
-									placeholder="blur"
 								/>
 							</div>
 							<div className="work-details">

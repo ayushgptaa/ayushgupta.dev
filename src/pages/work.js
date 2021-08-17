@@ -24,7 +24,7 @@ export default function work({ data }) {
 }
 
 export async function getStaticProps() {
-	const query = encodeURIComponent(`*[_type == "work"]{
+	const query = encodeURIComponent(`*[_type == "work"] | order(_createdAt asc){
 	_id,
 	projecttype,
 	title,
