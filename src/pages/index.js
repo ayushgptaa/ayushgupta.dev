@@ -20,7 +20,8 @@ export default function Home() {
 								<p> More about me</p>
 								<div className="arrowbtn-container">
 									<div className="line"></div>
-									<i className="fas fa-angle-right arrowbtnlogo "></i>
+									{/* <i className="fas fa-angle-right arrowbtnlogo "></i> */}
+									<div class="right-arrowbtn"></div>
 								</div>
 							</a>
 						</Link>
