@@ -10,8 +10,8 @@ export default function Home() {
 				<section className="mainpagetext">
 					<article className="mainpagetextpara">
 						<p>
-							Hey!! I'm Ayush, a self taught web developer who loves building & sometimes designing
-							exceptional things for web👋
+							Hey!! I'm Ayush, a self taught web developer who loves building & sometimes designing things
+							for web👋
 						</p>
 					</article>
 					<div className="about-link">

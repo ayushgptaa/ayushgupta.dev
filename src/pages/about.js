@@ -12,8 +12,8 @@ export default function About() {
 					<h2>About me 👦</h2>
 					<article>
 						<p>
-							I am Ayush Gupta a web developer based in India 📍 who loves to create unique things for web
-							👨‍💻
+							I am Ayush Gupta a web developer based in India 📍 who loves to create unique things for the
+							web 👨‍💻
 						</p>
 					</article>
 
@@ -31,15 +31,14 @@ export default function About() {
 					</article>
 					<article>
 						<p>
-							I strive to design interfaces and experiences that people can enjoy on all digital mediums.
-							I have a strong basics of front-end and ui/ux design and presently i am fixate towards
-							imporving/learning back-end skills.
+							With strong basics of front-end and UI/UX design and presently I am fixated on imporving
+							back-end skills.
 						</p>
 					</article>
 
 					<article>
 						<p>
-							Other than creating websites, I love to sketch 🎨 anime 📺 photography 📷 travelling 🗼 food
+							Other than creating websites, I love to sketch 🎨 anime 📺 photography 📷 traveling 🗼 food
 							🍕 and music 🎶.
 						</p>
 					</article>
