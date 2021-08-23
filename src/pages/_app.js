@@ -3,7 +3,6 @@
 import { useEffect } from 'react';
 import '../../styles/main.scss';
 import { Header } from '../components/Header';
-import Layout from '../components/Layout';
 
 function MyApp({ Component, pageProps }) {
 	useEffect(() => {
@@ -19,7 +18,6 @@ function MyApp({ Component, pageProps }) {
 	}, []);
 	return (
 		<>
-			<Layout></Layout>
 			<Header />
 			<Component {...pageProps}></Component>
 		</>

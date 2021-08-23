@@ -1,11 +1,13 @@
 /** @format */
 
 import Link from 'next/link';
+import Layout from '../components/Layout';
 import { Social } from '../components/Social';
 
 export default function Home() {
 	return (
 		<>
+			<Layout title="Ayush Gupta - Home" />
 			<main className="index">
 				<section className="mainpagetext">
 					<article className="mainpagetextpara">
@@ -20,8 +22,7 @@ export default function Home() {
 								<p> More about me</p>
 								<div className="arrowbtn-container">
 									<div className="line"></div>
-									{/* <i className="fas fa-angle-right arrowbtnlogo "></i> */}
-									<div class="right-arrowbtn"></div>
+									<div className="right-arrowbtn"></div>
 								</div>
 							</a>
 						</Link>

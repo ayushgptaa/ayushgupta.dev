@@ -2,19 +2,18 @@
 
 import React from 'react';
 import { Footer } from '../components/Footer';
+import Layout from '../components/Layout';
 import { Social } from '../components/Social';
 
 export default function About() {
 	return (
 		<>
+			<Layout title="Ayush Gupta - About" />
 			<main className="about">
 				<section className="aboutme">
 					<h2>About me 👦</h2>
 					<article>
-						<p>
-							I am Ayush Gupta a web developer based in India 📍 who loves to create unique things for the
-							web 👨‍💻
-						</p>
+						<p>I am Ayush Gupta a web developer who loves to create unique things for the web </p>
 					</article>
 
 					<article>
@@ -44,7 +43,6 @@ export default function About() {
 					</article>
 				</section>
 				<section className="contact">
-					{/* <marquee direction="left"> */}
 					<h3>Enough about me </h3>
 					<h3>Let's talk about you 🌹 </h3>
 
