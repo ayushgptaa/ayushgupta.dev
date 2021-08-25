@@ -31,21 +31,21 @@ const Layout = ({ title }) => {
 				/****** Open Graph / Facebook ******/
 				<meta property="og:type" content="website" />
 				<meta property="og:url" content="https://ayushguptaa.com" />
-				<meta property="og:title" content="Ayush Gupta- Web developer 👨‍💻" />
+				<meta property="og:title" content="Ayush Gupta- Web developer " />
 				<meta
 					property="og:description"
 					content="Welcome to the portfolio Ayush Gupta, a creative web designer specializing in building things for web."
 				/>
-				<meta property="og:image" content="/Ogimage.png" />
+				<meta property="og:image" content="https://ayushguptaa.com/Ogimage.png" />
 				/****** Twitter ******/
 				<meta property="twitter:card" content="summary_large_image" />
 				<meta property="twitter:url" content="https://ayushguptaa.com" />
-				<meta property="twitter:title" content="Ayush Gupta- Web developer 👨‍💻" />
+				<meta property="twitter:title" content="Ayush Gupta- Web developer " />
 				<meta
 					property="twitter:description"
 					content="Welcome to the portfolio Ayush Gupta, a creative web designer specializing in building things for web."
 				/>
-				<meta property="twitter:image" content="/TwitterImage.png" />
+				<meta property="twitter:image" content="https://ayushguptaa.com/TwitterImage.png" />
 				<meta name="twitter:image:alt" content="Ayush Gupta- Web developer" />
 				<meta name="twitter:creator" content="@ayushgptaa" />
 			</Head>
