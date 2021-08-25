@@ -1,7 +1,5 @@
 /** @format */
 
-import React from 'react';
-``;
 const Sociallinks = [
 	{ url: 'https://www.instagram.com/_ayushguptaa/', name: 'Ig' },
 	{ url: 'https://github.com/ayushgptaa', name: 'Git' },

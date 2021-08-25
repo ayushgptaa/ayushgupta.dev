@@ -1,4 +1,4 @@
-import React from 'react';
+/** @format */
 
 export const Technologies = () => {
 	return (
