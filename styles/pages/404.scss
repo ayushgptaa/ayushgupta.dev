@@ -1,0 +1,40 @@
+/** @format */
+@import '../_mixins';
+.container_404 {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	@include flex(center);
+	flex-direction: column;
+	padding: 1rem;
+	h2 {
+		font-size: 1rem;
+		padding-top: 1rem;
+		@include respond(tablet) {
+			@include fontsize(1.5rem);
+		}
+		@include respond(desktop) {
+			@include fontsize(1.8rem);
+		}
+	}
+}
+.Homebtn {
+	font-size: 1rem;
+	border: 1px solid $text;
+	padding: 0.5rem 1rem;
+	background: $bg;
+	color: $text;
+	cursor: pointer;
+	margin-top: 0.5rem;
+	@include flex(space-evenly);
+	@include respond(tablet) {
+		@include fontsize(1rem);
+		padding: 0.6rem 1rem;
+	}
+	@include respond(desktop) {
+		@include fontsize(1.5rem);
+		padding: 0.7rem 1.5rem;
+	}
+}

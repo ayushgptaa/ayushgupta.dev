@@ -2,7 +2,6 @@
 
 import { Graineffect } from '../Graineffect/graineffect';
 import Head from 'next/head';
-import { Header } from './Header';
 
 const Layout = ({ title }) => {
 	return (
@@ -45,12 +44,11 @@ const Layout = ({ title }) => {
 					property="twitter:description"
 					content="Welcome to the portfolio Ayush Gupta, a creative web designer specializing in building things for web."
 				/>
-				<meta property="twitter:image" content="https://ayushguptaa.com/TwitterImage.png" />
+				<meta property="twitter:image" content="https://ayushguptaa.com/Ogimage.png" />
 				<meta name="twitter:image:alt" content="Ayush Gupta- Web developer" />
 				<meta name="twitter:creator" content="@ayushgptaa" />
 			</Head>
 			<Graineffect />
-			<Header />
 		</>
 	);
 };

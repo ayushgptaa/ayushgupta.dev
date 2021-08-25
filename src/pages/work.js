@@ -7,7 +7,7 @@ import Layout from '../components/Layout';
 export default function work({ data }) {
 	return (
 		<>
-			<Layout title="Ayush Gupta - Work" />
+			<Layout title="Ayush Gupta - Work 🔨" />
 			<main className="work">
 				<section className="work-section">
 					<h2> SELECTED WORKS 🧰</h2>

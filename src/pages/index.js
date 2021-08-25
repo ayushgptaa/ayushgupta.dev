@@ -7,7 +7,7 @@ import { Social } from '../components/Social';
 export default function Home() {
 	return (
 		<>
-			<Layout title="Ayush Gupta - Home" />
+			<Layout title="Ayush Gupta - Home 🏠" />
 			<main className="index">
 				<section className="mainpagetext">
 					<article className="mainpagetextpara">

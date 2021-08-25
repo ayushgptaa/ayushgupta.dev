@@ -8,7 +8,7 @@ import { Social } from '../components/Social';
 export default function About() {
 	return (
 		<>
-			<Layout title="Ayush Gupta - About" />
+			<Layout title="Ayush Gupta - About 🤔" />
 			<main className="about">
 				<section className="aboutme">
 					<h2>About me 👦</h2>
