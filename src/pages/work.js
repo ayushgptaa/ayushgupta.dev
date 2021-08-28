@@ -45,6 +45,6 @@ export async function getStaticProps() {
 	else
 		return {
 			props: { data },
-			revalidate: 10, // In seconds
+			revalidate: 60, // In seconds
 		};
 }

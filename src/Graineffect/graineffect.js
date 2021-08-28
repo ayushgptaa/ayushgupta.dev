@@ -6,12 +6,9 @@ export const Graineffect = () => {
 	useEffect(() => {
 		const noise = () => {
 			let canvas, ctx;
-
 			let wWidth, wHeight;
-
 			let noiseData = [];
 			let frame = 0;
-
 			let loopTimeout;
 
 			// Create Noise
@@ -81,12 +78,13 @@ export const Graineffect = () => {
 			};
 
 			// Init
-			const init = (() => {
+			const init = () => {
 				canvas = document.getElementById('noise');
 				ctx = canvas.getContext('2d');
 
 				setup();
-			})();
+			};
+			init();
 		};
 
 		noise();
