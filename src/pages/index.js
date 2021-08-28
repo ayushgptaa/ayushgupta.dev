@@ -13,7 +13,7 @@ export default function Home() {
 					<article className="mainpagetextpara">
 						<p>
 							Hey!! I'm Ayush, a self taught web developer who loves building & sometimes designing things
-							for web👋
+							for web.
 						</p>
 					</article>
 					<div className="about-link">

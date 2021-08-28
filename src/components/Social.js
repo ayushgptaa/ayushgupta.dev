@@ -1,7 +1,7 @@
 /** @format */
 
 const Sociallinks = [
-	{ url: 'https://www.instagram.com/_ayushguptaa/', name: 'Ig' },
+	{ url: 'https://www.instagram.com/ayushgptaa/', name: 'Ig' },
 	{ url: 'https://github.com/ayushgptaa', name: 'Git' },
 	{ url: 'https://www.linkedin.com/in/ayush-gupta-54a855139/', name: 'Li' },
 	{ url: 'https://twitter.com/ayushgptaa', name: 'Tw' },

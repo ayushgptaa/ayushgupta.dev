@@ -1,3 +1,5 @@
+/** @format */
+
 @import '../mixins';
 .social-icons {
 	position: absolute;
@@ -6,7 +8,6 @@
 	color: $text;
 	width: 100%;
 	@include flex-horizontal-center;
-	// gap: 1.5rem;
 
 	a {
 		font-size: 1.2rem;
