@@ -26,7 +26,6 @@ const Layout = ({ title }) => {
 					name="keywords"
 					content="Ayush Gupta, ayush gupta, ayushgptaa, gupta, Portfolio, web developer, web dev, Html, Css, Javascript, Reactjs, Frontend, developer, Freelancing, "
 				/>
-				{/* <link rel="manifest" href="/site.webmanifest" /> */}
 				/****** Open Graph / Facebook ******/
 				<meta property="og:type" content="website" />
 				<meta property="og:url" content="https://ayushguptaa.com" />
@@ -47,6 +46,13 @@ const Layout = ({ title }) => {
 				<meta property="twitter:image" content="https://ayushguptaa.com/Ogimage.png" />
 				<meta name="twitter:image:alt" content="Ayush Gupta- Web developer" />
 				<meta name="twitter:creator" content="@ayushgptaa" />
+				/****** Chrome, Firefox OS and Opera ******/
+				<meta name="theme-color" content="#1c1c1c" />
+				/******Windows Phone ******/
+				<meta name="msapplication-navbutton-color" content="#1c1c1c" />
+				/****** iOS Safari ******/
+				<meta name="apple-mobile-web-app-capable" content="yes" />
+				<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 			</Head>
 			<Graineffect />
 		</>
