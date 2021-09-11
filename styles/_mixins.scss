@@ -34,7 +34,7 @@
 }
 
 @mixin maintext {
-	h2 {
+	h1 {
 		font-size: 1.5rem;
 		font-weight: $regular;
 		letter-spacing: 0;
@@ -60,7 +60,7 @@
 				font-weight: $light;
 			}
 			@include respond(desktop) {
-				margin: 2.9rem 0;
+				margin: 2.5rem 0;
 				@include fontsize(2.5rem);
 			}
 		}

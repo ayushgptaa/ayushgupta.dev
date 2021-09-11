@@ -20,7 +20,7 @@
 }
 
 .mainpagetextpara {
-	p {
+	h1 {
 		font-size: 1.5rem;
 		@include respond(tablet) {
 			@include fontsize(2.5rem);
@@ -37,9 +37,10 @@
 		width: 100%;
 	}
 	a {
+		width: auto;
 		@include flex-horizontal-center;
-		margin: auto;
 		@include respond(lgmobile) {
+			width: 450px;
 		}
 		@include respond(desktop) {
 			margin: 0;
@@ -48,13 +49,16 @@
 		}
 
 		&:hover .line {
-			width: 100px;
+			width: 65px;
+			@include respond(desktop) {
+				width: 100px;
+			}
 		}
 
-		p {
-			font-size: 1.5rem;
+		h2 {
+			font-size: 1.4rem;
 			text-transform: uppercase;
-			letter-spacing: 0.5px;
+			text-align: left;
 			cursor: pointer;
 			@include respond(tablet) {
 				@include fontsize(2rem);
@@ -66,20 +70,20 @@
 	}
 }
 .arrowbtn-container {
-	display: none;
-	@include respond(desktop) {
-		display: inline-block;
-		margin-left: 1rem;
-		@include flex-vertical-center;
-		position: relative;
-	}
+	display: inline-block;
+	margin-left: 1rem;
+	@include flex-vertical-center;
+	position: relative;
 }
 .line {
-	width: 80px;
-	height: 2px;
+	width: 65px;
+	height: 1.5px;
 	background-color: $text;
 	display: inline-block;
 	transition: width 0.35s ease-in-out;
+	@include respond(desktop) {
+		width: 80px;
+	}
 }
 
 .arrowbtnlogo {

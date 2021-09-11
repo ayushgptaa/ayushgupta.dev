@@ -7,19 +7,19 @@ import { Social } from '../components/Social';
 export default function Home() {
 	return (
 		<>
-			<Layout title="Ayush Gupta - Home 🏠" />
+			<Layout title="Ayush Gupta - Frontend developer 💅" />
 			<main className="index">
 				<section className="mainpagetext">
 					<article className="mainpagetextpara">
-						<p>
-							Hey!! I'm Ayush, a self taught web developer who loves building & sometimes designing things
-							for web.
-						</p>
+						<h1>
+							Hey!! 👋 I'm Ayush, a self taught web developer who loves building & sometimes designing
+							things for web.
+						</h1>
 					</article>
 					<div className="about-link">
 						<Link href="/about" passhref className="about-tag">
 							<a>
-								<p> More about me</p>
+								<h2> More about me</h2>
 								<div className="arrowbtn-container">
 									<div className="line"></div>
 									<div className="right-arrowbtn"></div>

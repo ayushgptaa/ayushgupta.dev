@@ -13,17 +13,17 @@ export default function About({ data }) {
 
 	return (
 		<>
-			<Layout title="Ayush Gupta - About 🤔" />
+			<Layout title="Ayush Gupta - About me 💡" />
 			<main className="about">
 				<section className="aboutme">
-					<h2>About me 👦</h2>
+					<h1>About me 👦</h1>
 					{aboutme}
 				</section>
 				<section className="contact">
 					<h3>Enough about me </h3>
 					<h3>Let's talk about you 🌹 </h3>
 
-					<h4>You can reach me here </h4>
+					<h4>You can reach me here 📮 </h4>
 					<h5>
 						<a href="mailto:ayush.gupta.jk@gmail.com">ayush.gupta.jk@gmail.com</a>
 					</h5>
