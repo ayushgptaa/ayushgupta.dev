@@ -3,6 +3,7 @@
 @import '../mixins';
 .index {
 	width: 100%;
+	margin: auto;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -13,13 +14,13 @@
 }
 .mainpagetext {
 	text-align: center;
-	padding: 1.5rem;
+	padding: 1rem;
 	@include respond(desktop) {
 		text-align: left;
 	}
 }
 
-.mainpagetextpara {
+.mainpagetextheading {
 	h1 {
 		font-size: 1.5rem;
 		@include respond(tablet) {
@@ -33,18 +34,21 @@
 
 .about-link {
 	margin-top: 1.5rem;
+
 	@include respond(desktop) {
 		width: 100%;
 	}
 	a {
 		width: auto;
-		@include flex-horizontal-center;
+		@include flex(center);
 		@include respond(lgmobile) {
-			width: 450px;
+			width: 400px;
+			margin: auto;
 		}
 		@include respond(desktop) {
 			margin: 0;
 			@include flex(flex-start);
+
 			width: 500px;
 		}
 
@@ -64,7 +68,7 @@
 				@include fontsize(2rem);
 			}
 			@include respond(desktop) {
-				@include fontsize(2.5rem);
+				@include fontsize(2.4rem);
 			}
 		}
 	}
@@ -83,6 +87,7 @@
 	transition: width 0.35s ease-in-out;
 	@include respond(desktop) {
 		width: 80px;
+		height: 2px;
 	}
 }
 

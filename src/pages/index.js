@@ -10,10 +10,10 @@ export default function Home() {
 			<Layout title="Ayush Gupta - Frontend developer 💅" />
 			<main className="index">
 				<section className="mainpagetext">
-					<article className="mainpagetextpara">
+					<article className="mainpagetextheading">
 						<h1>
-							Hey!! 👋 I'm Ayush, a self taught web developer who loves building & sometimes designing
-							things for web.
+							Hey!! I'm Ayush, a self-taught web developer who loves building sometimes designing things
+							for the web.
 						</h1>
 					</article>
 					<div className="about-link">
