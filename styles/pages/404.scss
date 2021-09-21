@@ -10,13 +10,11 @@
 	flex-direction: column;
 	padding: 1rem;
 	h2 {
-		font-size: 1rem;
+		font-size: 1.5rem;
 		padding-top: 1rem;
-		@include respond(tablet) {
-			@include fontsize(1.5rem);
-		}
+		padding-bottom: 0.5rem;
 		@include respond(desktop) {
-			@include fontsize(1.8rem);
+			@include fontsize(2rem);
 		}
 	}
 }

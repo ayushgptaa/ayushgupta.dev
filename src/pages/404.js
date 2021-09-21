@@ -9,8 +9,8 @@ export default function Custom404() {
 		<>
 			<Layout title="404 - Page not found 😵" />
 			<div className="container_404">
-				<Image src="/404.gif" alt="Error - 404" width={400} height={220} objectFit="fill" preloa />
-				<h2>Looks like you're lost !</h2>
+				<Image src="/404.gif" alt="Error - 404" width={350} height={190} objectFit="fill" />
+				<h2>404 - Page Not Found</h2>
 				<Link href="/" passHref>
 					<button className="Homebtn" role="button" aria-label="Home button">
 						Let's take you back to home :)
