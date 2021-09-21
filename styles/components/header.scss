@@ -23,22 +23,23 @@
 		opacity: 1;
 		width: 100%;
 		@include flex(space-between);
-	}
-	h3 {
-		font-weight: $regular;
-		font-size: 1rem;
-		@include respond(lgmobile) {
-			font-size: 1.3rem;
+		a {
+			font-weight: $regular;
+			font-size: 1.2rem;
+			@include respond(lgmobile) {
+				font-size: 1.5rem;
+			}
 		}
 	}
+
 	.nav-links {
 		@include flex(space-between);
 		gap: 20px;
 		a {
-			font-size: 1rem;
+			font-size: 1.2rem;
 			font-weight: $regular;
 			@include respond(lgmobile) {
-				font-size: 1.3rem;
+				font-size: 1.5rem;
 			}
 		}
 	}

@@ -8,16 +8,14 @@ export const Header = () => {
 		<header className="header">
 			<nav>
 				<Link href="/" passHref>
-					<a>
-						<h3>Ayush Gupta</h3>
-					</a>
+					<a aria-label="Home page">Ayush Gupta</a>
 				</Link>
 				<div className="nav-links">
 					<Link href="/about" passHref>
-						<a> About</a>
+						<a aria-label="About page"> About</a>
 					</Link>
 					<Link href="/work" passHref>
-						<a> Work</a>
+						<a aria-label="About page"> Work</a>
 					</Link>
 				</div>
 			</nav>
