@@ -13,7 +13,10 @@ export default function About({ data }) {
 
 	return (
 		<>
-			<Layout title="Ayush Gupta - About me 💡" />
+			<Layout
+				title="Ayush Gupta - About me 💡"
+				description="A little bit info about me - some of the technologies I use or work with and what I love to do other than creating websites ⚡"
+			/>
 			<main className="about">
 				<section className="aboutme">
 					<h1>About me 👦</h1>

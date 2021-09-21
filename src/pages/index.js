@@ -7,7 +7,10 @@ import { Social } from '../components/Social';
 export default function Home() {
 	return (
 		<>
-			<Layout title="Ayush Gupta - Frontend developer 💅" />
+			<Layout
+				title="Ayush Gupta - Frontend developer 💅"
+				description="Welcome to the portfolio Ayush Gupta, a creative web designer specializing in building things for web 🕸"
+			/>
 			<main className="index">
 				<section className="mainpagetext">
 					<article className="mainpagetextheading">
