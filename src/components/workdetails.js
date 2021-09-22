@@ -13,9 +13,11 @@ const workdetails = ({ result }) => {
 		boxes.forEach(box => {
 			gsap.from(box, {
 				scrollTrigger: box,
+				delay: 0.2,
 				y: 100,
-				duration: 1.2,
+				duration: 0.8,
 				opacity: 0,
+				skewY: 10,
 			});
 		});
 	}, []);

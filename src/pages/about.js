@@ -17,15 +17,14 @@ export default function About({ data }) {
 				title="Ayush Gupta - About me 💡"
 				description="A little bit info about me - some of the technologies I use or work with and what I love to do other than creating websites ⚡"
 			/>
-			<main className="about">
-				<section className="aboutme">
+			<main className="About">
+				<section className="aboutmetext">
 					<h1>About me 👦</h1>
 					{aboutme}
 				</section>
 				<section className="contact">
 					<h3>Enough about me </h3>
 					<h3>Let's talk about you 🌹 </h3>
-
 					<h4>You can reach me here 📮 </h4>
 					<h5>
 						<a href="mailto:ayush.gupta.jk@gmail.com">ayush.gupta.jk@gmail.com</a>

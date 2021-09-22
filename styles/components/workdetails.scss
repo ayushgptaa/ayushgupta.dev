@@ -2,7 +2,6 @@
 @import '../_mixins';
 .work-wrapper {
 	margin-top: 2.5rem;
-
 	@include respond(tablet) {
 		margin-top: 4rem;
 	}

@@ -1,21 +1,21 @@
 /** @format */
 
 @import '../mixins';
-.about {
+.About {
 	width: 90%;
 	margin: auto;
 	padding: 0.6rem;
-	margin-top: 6rem;
+	margin-top: 2rem;
 	@include respond(tablet) {
-		margin-top: 10rem;
+		margin-top: 5rem;
 	}
 
 	@include respond(desktop) {
 		width: 85%;
-		margin-top: 10rem;
+		margin-top: 5rem;
 	}
 }
-.aboutme {
+.aboutmetext {
 	@include maintext;
 }
 .contact {
@@ -41,7 +41,7 @@
 	}
 	h4 {
 		font-weight: $regular;
-		margin-top: 2rem;
+		margin-top: 1rem;
 		text-transform: uppercase;
 		@include respond(lgmobile) {
 			@include fontsize(1.5rem);
@@ -52,7 +52,7 @@
 	}
 	h5 {
 		font-weight: $regular;
-		margin-top: 1rem;
+		margin-top: 0.5rem;
 		font-size: 1rem;
 		text-decoration: underline;
 		@include respond(lgmobile) {

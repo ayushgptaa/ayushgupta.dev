@@ -5,13 +5,14 @@
 	width: 90%;
 	margin: auto;
 	padding: 0.6rem;
-	margin-top: 6rem;
+	margin-top: 2rem;
 	@include respond(tablet) {
-		margin-top: 10rem;
+		margin-top: 5rem;
 	}
+
 	@include respond(desktop) {
 		width: 85%;
-		margin-top: 10rem;
+		margin-top: 5rem;
 	}
 }
 

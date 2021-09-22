@@ -1,8 +1,8 @@
 /** @format */
 
 @import '../mixins';
-.index {
-	width: 100%;
+.home {
+	width: 90%;
 	margin: auto;
 	position: absolute;
 	top: 50%;
@@ -13,62 +13,54 @@
 	}
 }
 .mainpagetext {
-	text-align: center;
-	padding: 1rem;
+	padding: 0.5rem;
 	@include respond(desktop) {
+		padding: 1rem;
 		text-align: left;
 	}
-}
-
-.mainpagetextheading {
-	h1 {
-		font-size: 1.5rem;
-		@include respond(tablet) {
-			@include fontsize(2.5rem);
-		}
-		@include respond(desktop) {
-			@include fontsize(2.5rem);
+	article {
+		h1 {
+			font-size: 1.5rem;
+			@include respond(tablet) {
+				@include fontsize(2.5rem);
+			}
+			@include respond(desktop) {
+				@include fontsize(2.5rem);
+			}
 		}
 	}
 }
 
 .about-link {
 	margin-top: 1.5rem;
-
 	@include respond(desktop) {
 		width: 100%;
 	}
 	a {
 		width: auto;
-		@include flex(center);
+		@include flex(flex-start);
 		@include respond(lgmobile) {
 			width: 400px;
-			margin: auto;
 		}
 		@include respond(desktop) {
-			margin: 0;
-			@include flex(flex-start);
-
 			width: 500px;
 		}
-
-		&:hover .line {
-			width: 65px;
-			@include respond(desktop) {
-				width: 100px;
-			}
-		}
-
 		h2 {
 			font-size: 1.4rem;
 			text-transform: uppercase;
-			text-align: left;
 			cursor: pointer;
+
 			@include respond(tablet) {
 				@include fontsize(2rem);
 			}
 			@include respond(desktop) {
 				@include fontsize(2.4rem);
+			}
+		}
+		&:hover .line {
+			width: 65px;
+			@include respond(desktop) {
+				width: 110px;
 			}
 		}
 	}
@@ -81,22 +73,17 @@
 }
 .line {
 	width: 65px;
-	height: 1.5px;
+	height: 1.6px;
 	background-color: $text;
 	display: inline-block;
 	transition: width 0.35s ease-in-out;
 	@include respond(desktop) {
-		width: 80px;
+		width: 90px;
 		height: 2px;
 	}
 }
 
-.arrowbtnlogo {
-	font-size: 20px;
-	color: $text;
-}
-
-.right-arrowbtn {
+.arrowbtn {
 	width: 8px;
 	height: 8px;
 	box-shadow: -2px 2px 0 $text;

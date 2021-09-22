@@ -1,21 +1,19 @@
 /** @format */
 
 const Sociallinks = [
-	{ url: 'https://www.instagram.com/ayushgptaa/', name: 'Ig' },
-	{ url: 'https://github.com/ayushgptaa', name: 'Git' },
-	{ url: 'https://www.linkedin.com/in/ayush-gupta-54a855139/', name: 'Li' },
-	{ url: 'https://twitter.com/ayushgptaa', name: 'Tw' },
+	{ url: 'https://www.instagram.com/ayushgptaa/', name: 'Ig', label: 'Instagram' },
+	{ url: 'https://github.com/ayushgptaa', name: 'Git', label: 'Github' },
+	{ url: 'https://www.linkedin.com/in/ayush-gupta-54a855139/', name: 'Li', label: 'Linkedin' },
+	{ url: 'https://twitter.com/ayushgptaa', name: 'Tw', label: 'Twitter' },
 ];
 export const Social = () => {
 	return (
-		<>
-			<section className="social-icons">
-				{Sociallinks.map(({ url, name }, index) => (
-					<a href={url} target="_blank" rel="noopener" key={index}>
-						{name}
-					</a>
-				))}
-			</section>
-		</>
+		<section className="social-icons">
+			{Sociallinks.map(({ url, name, label }, index) => (
+				<a href={url} target="_blank" rel="noopener" key={index} aria-label={label} role="Social-links">
+					{name}
+				</a>
+			))}
+		</section>
 	);
 };
