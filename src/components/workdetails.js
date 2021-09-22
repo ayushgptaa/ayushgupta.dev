@@ -1,5 +1,5 @@
 /** @format */
-
+import { useEffect } from 'react';
 import React from 'react';
 import Image from 'next/image';
 import SeeWork from './Workbtn';
@@ -7,6 +7,18 @@ import { useNextSanityImage } from 'next-sanity-image';
 import client from '../../client';
 
 const workdetails = ({ result }) => {
+	useEffect(() => {
+		gsap.registerPlugin(ScrollTrigger);
+		const boxes = gsap.utils.toArray('.Work-info');
+		boxes.forEach(box => {
+			gsap.from(box, {
+				scrollTrigger: box,
+				y: 100,
+				duration: 1.2,
+				opacity: 0,
+			});
+		});
+	}, []);
 	return (
 		<>
 			{result.map(data => {
