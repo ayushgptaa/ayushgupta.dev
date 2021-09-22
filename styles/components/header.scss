@@ -2,45 +2,32 @@
 
 @import '../_mixins';
 .header {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
 	box-sizing: border-box;
-	padding: 0 1rem;
+	padding: 0 1.2rem;
 	height: $nav-height;
 	width: 100%;
-	font-size: $regular;
+	font-weight: $regular;
 	z-index: 9999;
-	opacity: 5;
 	@include flex-vertical-center;
-
 	@include respond(lgmobile) {
 		height: calc(#{$nav-height + 1rem});
 		padding: 1.5rem 1.5rem;
 	}
 	nav {
-		opacity: 1;
 		width: 100%;
 		@include flex(space-between);
-		a {
-			font-weight: $regular;
-			font-size: 1.2rem;
-			@include respond(lgmobile) {
-				font-size: 1.5rem;
-			}
-		}
 	}
 
-	.nav-links {
+	div {
 		@include flex(space-between);
 		gap: 20px;
-		a {
-			font-size: 1.2rem;
-			font-weight: $regular;
-			@include respond(lgmobile) {
-				font-size: 1.5rem;
-			}
-		}
+	}
+}
+
+.nav-link {
+	font-size: 1.2rem;
+	font-weight: $regular;
+	@include respond(lgmobile) {
+		font-size: 1.5rem;
 	}
 }
