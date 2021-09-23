@@ -2,41 +2,41 @@
 @import '../_mixins';
 .work-wrapper {
 	margin-top: 2.5rem;
+	visibility: hidden;
 	@include respond(tablet) {
 		margin-top: 4rem;
 	}
-	div {
-		h3 {
-			overflow: hidden;
-			text-align: center;
-			font-size: 1rem;
-			text-transform: capitalize;
-			@include respond(tablet) {
-				@include fontsize(1.2rem);
-			}
-			@include respond(desktop) {
-				@include fontsize(1.5rem);
-			}
+}
+.work-type {
+	h3 {
+		overflow: hidden;
+		text-align: center;
+		font-size: 1rem;
+		text-transform: capitalize;
+		@include respond(tablet) {
+			@include fontsize(1.2rem);
 		}
-
-		h3:before,
-		h3:after {
-			content: '';
-			background-color: $text;
-			display: inline-block;
-			height: 1px;
-			position: relative;
-			vertical-align: middle;
-			width: 50%;
+		@include respond(desktop) {
+			@include fontsize(1.5rem);
 		}
-		h3:before {
-			right: 0.5em;
-			margin-left: -50%;
-		}
-		h3:after {
-			left: 0.5em;
-			margin-right: -50%;
-		}
+	}
+	h3:before,
+	h3:after {
+		content: '';
+		background-color: $text;
+		display: inline-block;
+		height: 1px;
+		position: relative;
+		vertical-align: middle;
+		width: 50%;
+	}
+	h3:before {
+		right: 0.5em;
+		margin-left: -50%;
+	}
+	h3:after {
+		left: 0.5em;
+		margin-right: -50%;
 	}
 }
 
@@ -56,6 +56,7 @@
 .Work-info {
 	width: 100%;
 	position: relative;
+
 	@include respond(desktop) {
 		margin-top: 1rem;
 	}

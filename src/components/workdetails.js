@@ -1,36 +1,19 @@
-/** @format */
-import { useLayoutEffect } from 'react';
-import React from 'react';
 import Image from 'next/image';
 import SeeWork from './Workbtn';
 import { useNextSanityImage } from 'next-sanity-image';
 import client from '../../client';
 
 const workdetails = ({ result }) => {
-	useLayoutEffect(() => {
-		gsap.registerPlugin(ScrollTrigger);
-		const boxes = gsap.utils.toArray('.Work-info');
-		boxes.forEach(box => {
-			gsap.from(box, {
-				scrollTrigger: box,
-				delay: 0.2,
-				y: 100,
-				duration: 0.8,
-				opacity: 0,
-				skewY: 10,
-			});
-		});
-	}, []);
 	return (
 		<>
 			{result.map(data => {
 				return (
 					<section className="work-wrapper" key={data._id}>
-						<div>
+						<div className="work-type">
 							<h3>{data.projecttype}</h3>
-							<h2 className="work-name">{data.title}</h2>
 						</div>
 						<div className="Work-info">
+							<h2 className="work-name">{data.title}</h2>
 							<div className="work-image">
 								<Image
 									src={useNextSanityImage(client, data.image)}

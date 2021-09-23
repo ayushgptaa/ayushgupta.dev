@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import '../../styles/main.scss';
 import { Header } from '../components/Header';
 import Script from 'next/script';
+import { Homepganimation } from '../animations/animatins';
 
 function MyApp({ Component, pageProps }) {
 	useEffect(() => {
@@ -11,6 +12,7 @@ function MyApp({ Component, pageProps }) {
 		window.addEventListener('resize', () => {
 			document.body.style.minHeight = window.innerHeight + 'px';
 		});
+		Homepganimation();
 		return () => {
 			window.removeEventListener('resize', () => {
 				document.body.style.minHeight = window.innerHeight + 'px';

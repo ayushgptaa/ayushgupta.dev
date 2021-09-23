@@ -1,8 +1,12 @@
-/** @format */
+import { useEffect } from 'react';
+import { Aboutpganimation } from '../animations/animatins';
 import { Footer } from '../components/Footer';
 import Layout from '../components/Layout';
 
 export default function About({ data }) {
+	useEffect(() => {
+		Aboutpganimation();
+	}, []);
 	const aboutme = data.result.map(({ _id, para }) => {
 		return (
 			<article key={_id}>
