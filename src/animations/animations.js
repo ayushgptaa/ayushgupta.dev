@@ -1,6 +1,7 @@
 export const Homepganimation = () => {
 	const t1 = gsap.timeline({ ease: 'power4.out' });
 	t1.from('.header', {
+		autoAlpha: 0,
 		y: -100,
 		duration: 0.8,
 		opacity: 0,
