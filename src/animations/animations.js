@@ -23,11 +23,16 @@ export const Aboutpganimation = () => {
 	t2.from('.aboutmetext h1', {
 		y: 100,
 		autoAlpha: 0,
-	}).from('.aboutmetext article', {
-		y: 50,
-		stagger: 0.1,
-		autoAlpha: 0,
-	});
+	})
+		.from('.aboutmetext article', {
+			y: 50,
+			stagger: 0.1,
+			autoAlpha: 0,
+		})
+		.from('.contact', {
+			y: 50,
+			autoAlpha: 0,
+		});
 };
 
 export const Workpganimations = () => {
