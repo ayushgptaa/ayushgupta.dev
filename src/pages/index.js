@@ -13,9 +13,7 @@ export default function Home() {
 			<main className="home">
 				<section className="mainpagetext">
 					<article>
-						<h1>
-							Heyo! I'm Ayush, a self-taught web developer who loves making stuff for the for the web.
-						</h1>
+						<h1>Hey! I'm Ayush, a self-taught web developer who loves making stuff for the for the web.</h1>
 					</article>
 					<div className="about-link">
 						<Link href="/about" passhref>
