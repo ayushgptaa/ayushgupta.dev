@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Aboutpganimation } from '../animations/animatins';
+import { Aboutpganimation } from '../animations/animations';
 import { Footer } from '../components/Footer';
 import Layout from '../components/Layout';
 

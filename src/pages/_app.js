@@ -1,7 +1,7 @@
 import '../../styles/main.scss';
 import { Header } from '../components/Header';
 import Script from 'next/script';
-import { Homepganimation } from '../animations/animatins';
+import { Homepganimation } from '../animations/animations';
 import useLayoutEffect from '../components/use-isomorphic-layout-effect';
 
 function MyApp({ Component, pageProps }) {
