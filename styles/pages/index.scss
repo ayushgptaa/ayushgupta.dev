@@ -12,6 +12,7 @@
 	}
 }
 .mainpagetext {
+	visibility: hidden;
 	padding: 0.5rem;
 	@include respond(desktop) {
 		padding: 1rem;

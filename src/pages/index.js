@@ -1,9 +1,13 @@
-/** @format */
+import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Layout from '../components/Layout';
 import { Social } from '../components/Social';
 
 export default function Home() {
+	const mainpagetext = useRef();
+	useEffect(() => {
+		mainpagetext.current.style.visibility = 'visible';
+	}, []);
 	return (
 		<>
 			<Layout
@@ -11,7 +15,7 @@ export default function Home() {
 				description="Welcome to the portfolio Ayush Gupta, a creative web designer specializing in building things for web 🕸"
 			/>
 			<main className="home">
-				<section className="mainpagetext">
+				<section className="mainpagetext" ref={mainpagetext}>
 					<article>
 						<h1>Hey! I'm Ayush, a self-taught web developer who loves making stuff for the for the web.</h1>
 					</article>
