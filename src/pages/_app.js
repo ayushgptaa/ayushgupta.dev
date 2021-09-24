@@ -1,13 +1,11 @@
-/** @format */
-
-import { useEffect } from 'react';
 import '../../styles/main.scss';
 import { Header } from '../components/Header';
 import Script from 'next/script';
 import { Homepganimation } from '../animations/animatins';
+import useLayoutEffect from '../components/use-isomorphic-layout-effect';
 
 function MyApp({ Component, pageProps }) {
-	useEffect(() => {
+	useLayoutEffect(() => {
 		document.body.style.minHeight = window.innerHeight + 'px';
 		window.addEventListener('resize', () => {
 			document.body.style.minHeight = window.innerHeight + 'px';
