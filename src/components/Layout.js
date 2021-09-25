@@ -1,6 +1,6 @@
 /** @format */
 
-import { Graineffect } from '../Graineffect/graineffect';
+import { Graineffect } from '../helpers/graineffect';
 import Head from 'next/head';
 
 const Layout = ({ title, description }) => {

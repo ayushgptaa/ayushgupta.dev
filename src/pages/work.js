@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Footer } from '../components/Footer';
-import Work from '../components/Workdetails';
+import Work from '../components/workdetails';
 import Layout from '../components/Layout';
 import { Workpganimations } from '../helpers/animations';
 
