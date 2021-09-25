@@ -7,14 +7,15 @@ export const Homepganimation = () => {
 		opacity: 0,
 	})
 		.from('.social-icons', {
-			y: 10,
+			y: 100,
 			duration: 0.8,
 			opacity: 0,
 			autoAlpha: 0,
+			delay: '-0.5',
 		})
 		.from('.mainpagetext', {
-			y: 10,
-			duration: 0.8,
+			y: 100,
+			duration: 1,
 			ease: 'power4.out',
 			opacity: 0,
 			autoAlpha: 0,
@@ -24,12 +25,12 @@ export const Homepganimation = () => {
 export const Aboutpganimation = () => {
 	const t2 = gsap.timeline({ ease: 'power4.out', opacity: 0, duration: 0.8 });
 	t2.from('.aboutmetext h1', {
-		y: 10,
+		y: 50,
 		autoAlpha: 0,
 	})
 		.from('.aboutmetext article', {
-			y: 10,
-			stagger: 0.1,
+			y: 50,
+			stagger: 0.2,
 			autoAlpha: 0,
 		})
 		.from('.contact', {
@@ -45,11 +46,13 @@ export const Workpganimations = () => {
 		workinfo.forEach(work => {
 			gsap.from(work, {
 				autoAlpha: 0,
-				scrollTrigger: work,
+				scrollTrigger: {
+					trigger: work,
+				},
 				ease: 'power1.out',
-				delay: 0.1,
+				delay: 0.2,
 				y: 50,
-				duration: 0.6,
+				duration: 0.8,
 				opacity: 0,
 			});
 		});
