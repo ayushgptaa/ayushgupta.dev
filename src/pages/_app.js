@@ -1,21 +1,14 @@
 import '../../styles/main.scss';
 import { Header } from '../components/Header';
 import Script from 'next/script';
-import { Homepganimation } from '../animations/animations';
-import useLayoutEffect from '../components/use-isomorphic-layout-effect';
+import { Homepganimation } from '../helpers/animations';
+import useLayoutEffect from '../helpers/use-isomorphic-layout-effect';
+import { setheight } from '../helpers/setheight';
 
 function MyApp({ Component, pageProps }) {
 	useLayoutEffect(() => {
-		document.body.style.minHeight = window.innerHeight + 'px';
-		window.addEventListener('resize', () => {
-			document.body.style.minHeight = window.innerHeight + 'px';
-		});
+		setheight();
 		Homepganimation();
-		return () => {
-			window.removeEventListener('resize', () => {
-				document.body.style.minHeight = window.innerHeight + 'px';
-			});
-		};
 	}, []);
 	return (
 		<>

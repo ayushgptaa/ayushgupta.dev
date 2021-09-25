@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { Footer } from '../components/Footer';
-import Work from '../components/workdetails';
+import Work from '../components/Workdetails';
 import Layout from '../components/Layout';
-import { Workpganimations } from '../animations/animations';
+import { Workpganimations } from '../helpers/animations';
 
 export default function work({ data }) {
 	useEffect(() => {
