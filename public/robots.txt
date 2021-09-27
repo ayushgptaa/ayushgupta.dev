@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ayushguptaa.com
+
+# Sitemaps
+Sitemap: https://ayushguptaa.com/sitemap.xml
