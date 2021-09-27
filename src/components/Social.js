@@ -14,7 +14,7 @@ export const Social = () => {
 	return (
 		<section className="social-icons" ref={socialicons}>
 			{Sociallinks.map(({ url, name, label }, index) => (
-				<a href={url} target="_blank" rel="noopener" key={index} aria-label={label} role="Social-links">
+				<a href={url} target="_blank" rel="noopener" key={index} aria-label={label}>
 					{name}
 				</a>
 			))}
