@@ -5,11 +5,9 @@
 	visibility: hidden;
 	position: fixed;
 	bottom: 1rem;
-	margin-top: 30px;
 	color: $text;
 	width: 100%;
 	@include flex-horizontal-center;
-
 	a {
 		font-size: 1.2rem;
 		padding: 0 1rem;

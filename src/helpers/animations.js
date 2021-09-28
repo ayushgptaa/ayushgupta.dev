@@ -1,5 +1,5 @@
 export const Homepganimation = () => {
-	const t1 = gsap.timeline({ ease: 'power4.out' });
+	const t1 = gsap.timeline({ ease: 'power4.out', delay: 0.2 });
 	t1.from('.header', {
 		autoAlpha: 0,
 		y: -100,
@@ -13,7 +13,7 @@ export const Homepganimation = () => {
 			autoAlpha: 0,
 			delay: '-0.5',
 		})
-		.from('.mainpagetext', {
+		.from('.mainpagetext, .container_404', {
 			y: 100,
 			duration: 1,
 			ease: 'power4.out',

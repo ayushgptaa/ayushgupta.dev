@@ -7,6 +7,7 @@ export default function About({ data }) {
 	useEffect(() => {
 		Aboutpganimation();
 	}, []);
+
 	const aboutme = data.result.map(({ _id, para }) => {
 		return (
 			<article key={_id}>
@@ -23,12 +24,12 @@ export default function About({ data }) {
 			/>
 			<main className="About">
 				<section className="aboutmetext">
-					<h1>About me 👦</h1>
+					<h1>About me </h1>
 					{aboutme}
 				</section>
 				<section className="contact">
 					<h3>Enough about me </h3>
-					<h3>Let's talk about you 🌹 </h3>
+					<h3>Let's talk about you </h3>
 					<h4>You can reach me here 📮 </h4>
 					<h5>
 						<a href="mailto:ayush.gupta.jk@gmail.com">ayush.gupta.jk@gmail.com</a>

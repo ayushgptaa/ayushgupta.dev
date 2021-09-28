@@ -16,7 +16,7 @@ export default function Custom404() {
 				<h2>404 - Page Not Found</h2>
 				<Link href="/" passHref>
 					<button className="Homebtn" role="button" aria-label="Home button">
-						Let's take you back to home :)
+						Let's take you back to home :&#41;
 					</button>
 				</Link>
 			</div>
