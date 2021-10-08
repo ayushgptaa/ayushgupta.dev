@@ -29,6 +29,11 @@ npm run dev
 ```sh
 npm run build
 ```
+##  Tech Stack 🔮
+- Next.js
+- SCSS
+- Sanity CMS
+- Gsap
 
 ## Author
 
