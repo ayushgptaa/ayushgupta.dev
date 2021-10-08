@@ -3,7 +3,8 @@ import Link from 'next/link';
 import Layout from '../components/Layout';
 import { Social } from '../components/Social';
 
-export default function Home() {
+export default function Home({ data }) {
+	const { maintext } = data.result[0];
 	const mainpagetext = useRef();
 	useEffect(() => {
 		mainpagetext.current.style.visibility = 'visible';
@@ -17,7 +18,7 @@ export default function Home() {
 			<main className="home">
 				<section className="mainpagetext" ref={mainpagetext}>
 					<article>
-						<h1>Hey! I'm Ayush, a self-taught web developer who loves making stuff for the for the web.</h1>
+						<h1>{maintext}</h1>
 					</article>
 					<div className="about-link">
 						<Link href="/about" passhref>
@@ -35,4 +36,23 @@ export default function Home() {
 			<Social />
 		</>
 	);
+}
+
+export async function getStaticProps() {
+	const query = encodeURIComponent(`*[_type == "home"] {
+	_id,
+	maintext,
+}`);
+	const url = `https://${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}.apicdn.sanity.io/v1/data/query/production?query=${query}`;
+	const res = await fetch(url);
+	const data = await res.json();
+	if (!data)
+		return {
+			notFound: true,
+		};
+	else
+		return {
+			props: { data },
+			revalidate: 3600, // In seconds
+		};
 }
