@@ -1,16 +1,42 @@
-<!-- @format -->
+<h2 align="center"> V2 - <a href='https://ayushguptaa.com'>ayushguptaa.com </a></h2>
 
-<h2 align="center"> V2 - ayushguptaa.com 🕸</h2>
-
-![Ayush Gupta](public/Homepage.png)
+![Ayush Gupta](githubAssets/Homepage.png)
 
 <p align="center">
   The 2nd version of <a href="https://ayushguptaa.com" target="_blank">ayushguptaa.com</a> built with <a href="https://www.nextjs.org/" target="_blank">Nextjs</a> and <a href="https://sanity.io/" target="_blank">Sanity.io</a>
 </p>
+<br>
 
-## Requirements 🚀
+## How to setup Sanity 🚀
 
-For development, you will only need Node.js and a node global package, npm or Yarn, installed in your environement.
+Below are the steps on how to setup sanity studio :
+
+<p>
+1. Create a <a href="https://www.sanity.io/login/sign-up">Sanity</a> account <br>
+2. Click on create new project <br>
+3. Choose "start with command line".
+
+```
+npm install -g @sanity/cli sanity init
+```
+
+### Important 🚨
+
+Select **" Clean project with no predefined schemas "** when creating the sanity studio using sanity init.<br>
+<br> 4. Find schema folder in this repo and replace it with the schema present in your created studio.
+
+```
+Sanity start
+```
+
+<br>
+5. To start the studio run sanity start<br>
+6. A dashboard like this will open in localhost:3333
+
+![Sanity desk](githubAssets/sanity.png)
+<br> 7. Just click on the content that you want to add. <br>
+
+## Development 💻
 
 ## Install 📦
 
@@ -18,9 +44,9 @@ For development, you will only need Node.js and a node global package, npm or Ya
 npm install
 ```
 
-## Dev Server 🔌
+## Dev server 🔌
 
-```sh
+```
 npm run dev
 ```
 
@@ -29,13 +55,15 @@ npm run dev
 ```sh
 npm run build
 ```
-##  Tech Stack 🔮
-- Next.js
-- SCSS
-- Sanity CMS
-- Gsap
 
-## Author
+## Tech Stack 🔮
+
+-   Next.js
+-   SCSS
+-   Sanity CMS
+-   Gsap
+
+## Author 🖋️
 
 👤 **Ayush Gupta**
 
