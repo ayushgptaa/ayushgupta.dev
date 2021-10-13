@@ -7,6 +7,8 @@
 </p>
 <br>
 
+Feel free to fork this repository to make your own portfolio, and if you liked the repo, drop a star ⭐!
+
 ## How to setup Sanity 🚀
 
 Below are the steps on how to setup sanity studio :
@@ -33,11 +35,11 @@ sanity start
 6. A dashboard like this will open in localhost:3333.
 
 ![Sanity desk](githubAssets/sanity.png)
-<br> 7. Just click on the content that you want to add. <br> 8. For more information see <a href="https://www.sanity.io/docs">Sanity docs</a>
+<br> 7. Just click on the content that you want to add. <br> 8. For more information see <a href="https://www.sanity.io/docs">Sanity docs</a>.
 
 ## Development 🏗️
 
-Create a .env file in root of your app and add these :
+Create a **.env** file in root of your app and add these :
 
 ```
 NEXT_PUBLIC_SANITY_PROJECT_ID= Your_propject_id
@@ -74,6 +76,5 @@ npm run build
 
 👤 **Ayush Gupta**
 
--   Website: ayushguptaa.com
 -   Twitter: [@ayushgptaa](https://twitter.com/ayushgptaa)
 -   Github: [@ayushgptaa](https://github.com/ayushgptaa)
