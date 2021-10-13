@@ -23,34 +23,41 @@ npm install -g @sanity/cli sanity init
 ### Important 🚨
 
 Select **" Clean project with no predefined schemas "** when creating the sanity studio using sanity init.<br>
-<br> 4. Find schema folder in this repo and replace it with the schema present in your created studio.
+<br> 4. Find schema folder in this repo and replace it with the schema present in your created studio.<br> 5. Run this command.
 
 ```
-Sanity start
+sanity start
 ```
 
 <br>
-5. To start the studio run sanity start<br>
-6. A dashboard like this will open in localhost:3333
+6. A dashboard like this will open in localhost:3333.
 
 ![Sanity desk](githubAssets/sanity.png)
-<br> 7. Just click on the content that you want to add. <br>
+<br> 7. Just click on the content that you want to add. <br> 8. For more information see <a href="https://www.sanity.io/docs">Sanity docs</a>
 
-## Development 💻
+## Development 🏗️
 
-## Install 📦
+Create a .env file in root of your app and add these :
+
+```
+NEXT_PUBLIC_SANITY_PROJECT_ID= Your_propject_id
+NEXT_PUBLIC_SANITY_DATASET=production
+NEXT_PUBLIC_GOOGLE_ANALYTICS= Your_analytics_id
+```
+
+### Install 📦
 
 ```sh
 npm install
 ```
 
-## Dev server 🔌
+### Dev server 🔌
 
 ```
 npm run dev
 ```
 
-## Build Server 🏭
+### Build Server 🏭
 
 ```sh
 npm run build
