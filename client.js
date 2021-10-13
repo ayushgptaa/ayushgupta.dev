@@ -1,5 +1,3 @@
-/** @format */
-
 import sanityClient from '@sanity/client';
 
 const client = sanityClient({
