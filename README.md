@@ -78,3 +78,5 @@ npm run build
 
 -   Twitter: [@ayushgptaa](https://twitter.com/ayushgptaa)
 -   Github: [@ayushgptaa](https://github.com/ayushgptaa)
+
+<h3>Theme inspired by <a href="https://jonasreymondin.com/">jonasreymondin.com </a> 💅 </h3>
