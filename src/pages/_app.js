@@ -4,6 +4,7 @@ import Script from 'next/script';
 import { Homepganimation } from '../helpers/animations';
 import useLayoutEffect from '../helpers/use-isomorphic-layout-effect';
 import { setheight } from '../helpers/setheight';
+import { Graineffect } from '../helpers/graineffect';
 
 function MyApp({ Component, pageProps }) {
 	useLayoutEffect(() => {
@@ -17,7 +18,6 @@ function MyApp({ Component, pageProps }) {
 				strategy="lazyOnload"
 				src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
 			/>
-
 			<Script strategy="lazyOnload">
 				{`
 				window.dataLayer = window.dataLayer || [];
@@ -28,6 +28,7 @@ function MyApp({ Component, pageProps }) {
 				});
 				`}
 			</Script>
+			<Graineffect />
 			<Header />
 			<Component {...pageProps}></Component>
 		</>
