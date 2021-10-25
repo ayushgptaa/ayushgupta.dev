@@ -19,7 +19,7 @@ export const Header = () => {
 						</a>
 					</Link>
 					<Link href="/work" passHref>
-						<a aria-label="About page" className="nav-link">
+						<a aria-label="Work page" className="nav-link">
 							Work
 						</a>
 					</Link>
