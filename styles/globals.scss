@@ -40,6 +40,9 @@ body::-webkit-scrollbar {
 ol,
 ul {
 	list-style: none;
+	li {
+		font-weight: 300;
+	}
 }
 
 img {

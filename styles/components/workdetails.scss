@@ -98,7 +98,21 @@
 	}
 }
 .work-stack {
+	font-size: 1rem;
+	margin: 1rem 0;
+	@include respond(tablet) {
+		@include fontsize(1.5rem);
+		margin: 1.5rem 0;
+	}
+	@include respond(desktop) {
+		@include fontsize(2rem);
+		margin: 1.5rem 0;
+	}
 	text-transform: capitalize;
+	// border: 1px solid red;
+	li {
+		display: inline-block;
+	}
 }
 
 .Seework {

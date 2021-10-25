@@ -25,7 +25,11 @@ const workdetails = ({ result }) => {
 							</div>
 							<div className="work-details">
 								<p className="work-about">{data.description}</p>
-								<p className="work-stack">{data.technology.join(' ')}</p>
+								<ul className="work-stack">
+									{data.technology.map((tech, index) => {
+										return <li key={index}>{tech}&nbsp;</li>;
+									})}
+								</ul>
 								<SeeWork url={data.workurl} />
 							</div>
 						</div>
