@@ -3,7 +3,6 @@ import '../../styles/main.scss';
 import { Header } from '../components/Header';
 import Script from 'next/script';
 import { Homepganimation } from '../helpers/animations';
-import useLayoutEffect from '../helpers/use-isomorphic-layout-effect';
 import { setheight } from '../helpers/setheight';
 import { Graineffect } from '../helpers/graineffect';
 
