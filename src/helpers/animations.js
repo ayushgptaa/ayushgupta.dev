@@ -41,28 +41,17 @@ export const Aboutpganimation = () => {
 
 export const Workpganimations = () => {
 	gsap.registerPlugin(ScrollTrigger);
-	const workinfo = () => {
-		const workinfo = gsap.utils.toArray('.work-wrapper');
-		workinfo.forEach(work => {
-			gsap.from(work, {
-				autoAlpha: 0,
-				scrollTrigger: {
-					trigger: work,
-				},
-				ease: 'power1.out',
-				delay: 0.2,
-				y: 50,
-				duration: 0.8,
-				opacity: 0,
-			});
+	const workinfo = gsap.utils.toArray('.work-wrapper');
+	workinfo.forEach(work => {
+		gsap.from(work, {
+			scrollTrigger: {
+				trigger: work,
+			},
+			ease: 'power1.out',
+			delay: 0.2,
+			duration: 0.8,
+			y: 50,
+			opacity: 0,
 		});
-	};
-	const t3 = gsap.timeline({ ease: 'power4.out', onComplete: workinfo, opacity: 0, duration: 0.8 });
-	t3.from('.work-section h1', {
-		y: 10,
-		autoAlpha: 0,
-	}).from('.work-section article', {
-		y: 10,
-		autoAlpha: 0,
 	});
 };
