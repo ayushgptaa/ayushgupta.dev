@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import '../../styles/main.scss';
 import { Header } from '../components/Header';
 import Script from 'next/script';
@@ -7,9 +8,8 @@ import { setheight } from '../helpers/setheight';
 import { Graineffect } from '../helpers/graineffect';
 
 function MyApp({ Component, pageProps }) {
-	useLayoutEffect(() => {
+	useEffect(() => {
 		setheight();
-		Homepganimation();
 	}, []);
 	return (
 		<>

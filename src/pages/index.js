@@ -5,10 +5,6 @@ import { Social } from '../components/Social';
 
 export default function Home({ data }) {
 	const { maintext } = data.result[0];
-	const mainpagetext = useRef();
-	useEffect(() => {
-		mainpagetext.current.style.visibility = 'visible';
-	}, []);
 	return (
 		<>
 			<Layout
@@ -16,7 +12,7 @@ export default function Home({ data }) {
 				description="Welcome to the portfolio Ayush Gupta, a creative web designer specializing in building things for web 🕸"
 			/>
 			<main className="home">
-				<section className="mainpagetext" ref={mainpagetext}>
+				<section className="mainpagetext">
 					<article>
 						<h1>{maintext}</h1>
 					</article>
