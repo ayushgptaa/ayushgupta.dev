@@ -4,9 +4,9 @@ import { Footer } from '../components/Footer';
 import Layout from '../components/Layout';
 
 export default function About({ data }) {
-	useEffect(() => {
-		Aboutpganimation();
-	}, []);
+	// useEffect(() => {
+	// 	Aboutpganimation();
+	// }, []);
 
 	const aboutme = data.result.map(({ _id, para }) => {
 		return (

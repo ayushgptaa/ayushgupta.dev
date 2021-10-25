@@ -35,7 +35,6 @@
 
 @mixin maintext {
 	h1 {
-		visibility: hidden;
 		font-size: 1.4rem;
 		font-weight: $regular;
 		letter-spacing: 0;
@@ -48,7 +47,6 @@
 		}
 	}
 	article {
-		visibility: hidden;
 		p {
 			font-size: 1.2rem;
 			margin: 1.5rem 0;
