@@ -2,12 +2,8 @@ import { useEffect } from 'react';
 import { Footer } from '../components/Footer';
 import Work from '../components/workdetails';
 import Layout from '../components/Layout';
-import { Workpganimations } from '../helpers/animations';
 
 export default function work({ data }) {
-	useEffect(() => {
-		Workpganimations();
-	}, []);
 	return (
 		<>
 			<Layout
