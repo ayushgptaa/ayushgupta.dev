@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import '../../styles/main.scss';
 import { Header } from '../components/Header';
 import Script from 'next/script';
-import { Homepganimation } from '../helpers/animations';
 import { setheight } from '../helpers/setheight';
 import { Graineffect } from '../helpers/graineffect';
 

@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Footer } from '../components/Footer';
 import Work from '../components/workdetails';
 import Layout from '../components/Layout';
