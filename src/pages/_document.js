@@ -9,10 +9,7 @@ class MyDocument extends Document {
 	render() {
 		return (
 			<Html lang="en">
-				<Head>
-					<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" />
-					<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
-				</Head>
+				<Head />
 				<body>
 					<Main />
 					<NextScript />
