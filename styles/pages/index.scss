@@ -20,7 +20,7 @@
 		line-height: 3.5rem;
 	}
 	article {
-		h1 {
+		p {
 			font-size: 1.5rem;
 			@include respond(tablet) {
 				@include fontsize(2.5rem);

@@ -12,7 +12,7 @@ export default function Home({ data }) {
 			<main className="home">
 				<section className="mainpagetext">
 					<article>
-						<h1>{maintext}</h1>
+						<p>{maintext}</p>
 					</article>
 				</section>
 			</main>
