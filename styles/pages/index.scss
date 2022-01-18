@@ -14,18 +14,13 @@
 .mainpagetext {
 	padding: 0.5rem;
 	text-align: center;
-
 	@include respond(desktop) {
 		padding: 1rem;
-		line-height: 3.5rem;
 	}
 	article {
 		p {
 			font-size: 1.5rem;
 			@include respond(tablet) {
-				@include fontsize(2.5rem);
-			}
-			@include respond(desktop) {
 				@include fontsize(2.5rem);
 			}
 		}
