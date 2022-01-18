@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 
 const Sociallinks = [
-	{ url: 'https://www.instagram.com/ayushgptaa/', name: 'Ig', label: 'Instagram' },
 	{ url: 'https://github.com/ayushgptaa', name: 'Git', label: 'Github' },
 	{ url: 'https://www.linkedin.com/in/ayush-gupta-54a855139/', name: 'Li', label: 'Linkedin' },
 	{ url: 'https://twitter.com/ayushgptaa', name: 'Tw', label: 'Twitter' },
