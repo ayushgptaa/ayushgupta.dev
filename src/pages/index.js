@@ -1,5 +1,3 @@
-import { useEffect, useRef } from 'react';
-import Link from 'next/link';
 import Layout from '../components/Layout';
 import { Social } from '../components/Social';
 
@@ -16,17 +14,6 @@ export default function Home({ data }) {
 					<article>
 						<h1>{maintext}</h1>
 					</article>
-					<div className="about-link">
-						<Link href="/about" passhref>
-							<a>
-								<h2> More about me</h2>
-								<div className="arrowbtn-container">
-									<div className="line"></div>
-									<div className="arrowbtn"></div>
-								</div>
-							</a>
-						</Link>
-					</div>
 				</section>
 			</main>
 			<Social />
