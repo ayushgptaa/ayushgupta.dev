@@ -1,9 +1,9 @@
-<h2 align="center"> V2 - <a href='https://ayushguptaa.com'>ayushguptaa.com </a></h2>
+<h2 align="center"> V2 - <a href='https://ayushgupta.dev'>ayushgupta.dev </a></h2>
 
 ![Ayush Gupta](githubAssets/Homepage.png)
 
 <p align="center">
-  The 2nd version of <a href="https://ayushguptaa.com" target="_blank">ayushguptaa.com</a> built with <a href="https://www.nextjs.org/" target="_blank">Nextjs</a> and <a href="https://sanity.io/" target="_blank">Sanity.io</a>
+  The 2nd version of <a href="https://ayushgupta.dev" target="_blank">ayushgupta.dev</a> built with <a href="https://www.nextjs.org/" target="_blank">Nextjs</a> and <a href="https://sanity.io/" target="_blank">Sanity.io</a>
 </p>
 <br>
 
