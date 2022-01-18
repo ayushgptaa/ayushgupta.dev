@@ -62,7 +62,7 @@ a {
 }
 p {
 	font-weight: $light;
-	word-spacing: 2px;
+	word-spacing: 0.5px;
 	user-select: none;
 	cursor: text;
 }
@@ -83,7 +83,7 @@ a {
 	top: 0;
 	left: 0;
 	pointer-events: none;
-	opacity: 12%;
+	opacity: 8%;
 }
 span {
 	display: inline-block;

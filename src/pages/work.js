@@ -11,7 +11,7 @@ export default function work({ data }) {
 			/>
 			<main className="work">
 				<section className="work-section">
-					<h1> SELECTED WORKS </h1>
+					<h1> Selected Works 🧰</h1>
 					<article>
 						<p>A collection of few of my Projects. These are mostly practice, and my personal projects.</p>
 					</article>
