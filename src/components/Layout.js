@@ -1,7 +1,6 @@
-/** @format */
-
-import { Graineffect } from '../helpers/graineffect';
 import Head from 'next/head';
+
+const url = 'https://ayushgupta.dev';
 
 const Layout = ({ title, description }) => {
 	return (
@@ -21,20 +20,20 @@ const Layout = ({ title, description }) => {
 				<meta name="description" content={description} />
 				<meta
 					name="keywords"
-					content="Ayush Gupta, ayush gupta, ayushgptaa, gupta, Portfolio, web developer, web dev, Html, Css, Javascript, Reactjs, Frontend, developer, Freelancing "
+					content="Ayush Gupta, ayush gupta, ayushgptaa, gupta, Portfolio, web developer, web dev, Html, Css, Javascript, Reactjs, Frontend, developer, Freelancing, Developer"
 				/>
 				/****** Open Graph / Facebook ******/
 				<meta property="og:type" content="website" />
-				<meta property="og:url" content="https://ayushguptaa.com" />
+				<meta property="og:url" content={url} />
 				<meta property="og:title" content="Ayush Gupta- Web developer " />
 				<meta property="og:description" content={description} />
-				<meta property="og:image" content="https://ayushguptaa.com/Ogimage.png" />
+				<meta property="og:image" content={`${url}/Ogimage`} />
 				/****** Twitter ******/
 				<meta property="twitter:card" content="summary_large_image" />
-				<meta property="twitter:url" content="https://ayushguptaa.com" />
+				<meta property="twitter:url" content={url} />
 				<meta property="twitter:title" content="Ayush Gupta- Web developer " />
 				<meta property="twitter:description" content={description} />
-				<meta property="twitter:image" content="https://ayushguptaa.com/Ogimage.png" />
+				<meta property="twitter:image" content={`${url}/Ogimage.png`} />
 				<meta name="twitter:image:alt" content="Ayush Gupta- Web developer" />
 				<meta name="twitter:creator" content="@ayushgptaa" />
 				/****** Chrome, Firefox OS and Opera ******/
