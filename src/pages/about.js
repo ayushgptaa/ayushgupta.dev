@@ -22,7 +22,7 @@ export default function About({ data }) {
 			/>
 			<main className="About">
 				<section className="aboutmetext">
-					<h1>About me </h1>
+					<h1>About Me 🙋</h1>
 					{aboutme}
 				</section>
 				<section className="contact">
