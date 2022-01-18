@@ -36,14 +36,11 @@
 @mixin maintext {
 	h1 {
 		font-size: 1.4rem;
-		font-weight: $regular;
+		font-weight: $light;
 		letter-spacing: 0;
-		text-transform: uppercase;
+
 		@include respond(tablet) {
 			@include fontsize(2.5rem);
-		}
-		@include respond(desktop) {
-			@include fontsize(3rem);
 		}
 	}
 	article {
@@ -60,7 +57,7 @@
 			}
 			@include respond(desktop) {
 				margin: 2rem 0;
-				@include fontsize(2.5rem);
+				@include fontsize(2rem);
 			}
 		}
 	}
