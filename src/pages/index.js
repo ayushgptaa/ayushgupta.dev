@@ -9,7 +9,7 @@ export default function Home({ data }) {
 		<>
 			<Layout
 				title="Ayush Gupta - Frontend developer 💅"
-				description="Welcome to the portfolio Ayush Gupta, a creative web designer specializing in building things for web 🕸"
+				description="Welcome to the portfolio Ayush Gupta, a Frontend developer specializing in building web apps🕸"
 			/>
 			<main className="home">
 				<section className="mainpagetext">
