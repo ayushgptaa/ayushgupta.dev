@@ -1,5 +1,3 @@
-/** @format */
-
 export const Footer = () => {
-	return <footer className="footer">© 2021 — Ayush Gupta</footer>;
+	return <footer className="footer">© {new Date().getFullYear()} — Ayush Gupta</footer>;
 };
