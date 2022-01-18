@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://ayushguptaa.com
+Host: https://ayushgupta.dev
 
 # Sitemaps
-Sitemap: https://ayushguptaa.com/sitemap.xml
+Sitemap: https://ayushgupta.dev/sitemap.xml
