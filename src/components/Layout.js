@@ -27,7 +27,7 @@ const Layout = ({ title, description }) => {
 				<meta property="og:url" content={url} />
 				<meta property="og:title" content="Ayush Gupta- Web developer " />
 				<meta property="og:description" content={description} />
-				<meta property="og:image" content={`${url}/Ogimage`} />
+				<meta property="og:image" content={`${url}/Ogimage.png`} />
 				/****** Twitter ******/
 				<meta property="twitter:card" content="summary_large_image" />
 				<meta property="twitter:url" content={url} />
